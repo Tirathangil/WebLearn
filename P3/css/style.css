@@ -1,0 +1,57 @@
+body
+{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+    font-family: sans-serif;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+}
+
+h1 
+{
+    font-size: 32px;
+}
+
+table
+{
+    margin: 5px;
+}
+
+table,td,caption
+{
+    border: solid black 1px;
+    margin: 0px;
+    padding: 0px;
+}
+
+caption
+{
+    border-bottom: none;
+}
+
+figcaption 
+{
+    font-style: italic;
+    width: 200px;
+}
+
+.images
+{
+    margin: 10px;
+    float: right;
+}
+
+.foundcorr
+{
+    margin-bottom: 100px;
+}
+
+#samhouston
+{
+    height: 200px;
+}
