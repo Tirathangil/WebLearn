@@ -70,15 +70,16 @@ a, a:visited {
 
 .teamcard
 {
-  display: inline;
-  box-sizing: border-box;
-  margin-right: 100px;
-  clear: right;
+  display: table-cell;
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 50px;
+  margin: auto;
+  padding: 10px;
 }
 
 .persphoto
 {
-  margin:
 }
 
 .persname {
@@ -96,7 +97,7 @@ a, a:visited {
 
 .perspos {
   clear: both;
-  font-family: Roboto;
+  font-family: sans-serif;
   font-style: italic;
   font-weight: normal;
   font-size: 18px;
@@ -108,6 +109,8 @@ a, a:visited {
 }
 
 #team {
+  max-width: 1219px;
+  text-align: center;
   background-color: #EEEEEE;
   padding: 24px 55px;
 }
