@@ -1,17 +1,44 @@
-html
+body
 {
+    width: 1219px;
     margin: 0px auto;
+    padding: 0px;
 }
 
+a, a:visited
+{
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: sans-serif;
+    text-decoration: none;
+}
 
 #topbar 
 {
     position: fixed;
-    display: table-cell;
-    vertical-align: middle;
     width: 1219px;
     height: 84px;
     background-color: #007765;
-    padding: 0px 55px;
-    margin: 0px auto;
+}
+
+#PiedPiperLogo
+{
+    margin: 20px 55px;
+}
+
+#TopMenu
+{
+    float: right;
+    margin: 25px 55px;
+    
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+#TopMenuFixer
+{
+    height: 84px;
 }
