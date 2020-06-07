@@ -19,7 +19,7 @@ a, a:visited {
 
 .ishere {
   color: white;
-  font-family: Roboto;
+  font-family: sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 72px;
@@ -27,24 +27,97 @@ a, a:visited {
   padding: 160px 0px;
 }
 
-.ProblemHead {
+.headerstyle {
   color: #007765;
-  font-family: Roboto;
+  font-family: sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 64px;
   line-height: 75px;
+  text-align: center;
 }
 
-.problemtext {
+.textstyle {
   color: black;
-  font-family: Roboto;
+  font-family: sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 32px;
   line-height: 37px;
   padding: 0px 55px;
+  margin-bottom: 92px;
   text-align: justify;
+}
+
+.banner2 {
+  height: 483px;
+  background-image: url(../images/banner2.png);
+}
+
+.banner2text {
+  max-width: 1219px;
+  padding: 125px 160px;
+  margin: auto 0px;
+  color: white;
+  font-family: sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.teamcard
+{
+  display: inline;
+  box-sizing: border-box;
+  margin-right: 100px;
+  clear: right;
+}
+
+.persphoto
+{
+  margin:
+}
+
+.persname {
+  clear: both;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #007765;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+.perspos {
+  clear: both;
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+#team {
+  background-color: #EEEEEE;
+  padding: 24px 55px;
+}
+
+#ppclogo {
+  float: left;
+  width: 115px;
+  height: 115px;
+  margin-right: 48px;
+  margin-left: 55px;
 }
 
 #topbar {
