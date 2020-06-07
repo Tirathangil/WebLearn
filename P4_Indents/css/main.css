@@ -1,44 +1,72 @@
-body
-{
-    width: 1219px;
-    margin: 0px auto;
-    padding: 0px;
+body {
+  width: 1219px;
+  margin: 0px auto;
+  padding: 0px;
 }
 
-a, a:visited
-{
-    color: white;
-    font-size: 24px;
-    font-weight: 500;
-    font-family: sans-serif;
-    text-decoration: none;
+a, a:visited {
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: sans-serif;
+  text-decoration: none;
 }
 
-#topbar 
-{
-    position: fixed;
-    width: 1219px;
-    height: 84px;
-    background-color: #007765;
+.pipernet {
+  height: 403px;
+  background-image: url(../images/pipernet.png);
 }
 
-#PiedPiperLogo
-{
-    margin: 20px 55px;
+.ishere {
+  color: white;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 72px;
+  text-align: center;
+  padding: 160px 0px;
 }
 
-#TopMenu
-{
-    float: right;
-    margin: 25px 55px;
-    
-    color: white;
-    font-size: 24px;
-    font-weight: 500;
-    font-family: sans-serif;
+.ProblemHead {
+  color: #007765;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 75px;
 }
 
-#TopMenuFixer
-{
-    height: 84px;
+.problemtext {
+  color: black;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 37px;
+  padding: 0px 55px;
+  text-align: justify;
+}
+
+#topbar {
+  position: fixed;
+  width: 1219px;
+  height: 84px;
+  background-color: #007765;
+}
+
+#PiedPiperLogo {
+  margin: 20px 55px;
+}
+
+#TopMenu {
+  float: right;
+  margin: 25px 55px;
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+
+#TopMenuFixer {
+  height: 84px;
 }
