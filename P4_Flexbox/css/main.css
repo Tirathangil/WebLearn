@@ -1,0 +1,172 @@
+body {
+    width: 1219px;
+    margin: 0px auto;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+a,
+a:visited {
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.pipernet {
+    height: 403px;
+    background-image: url(../images/pipernet.png);
+}
+
+.ishere {
+    color: white;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    text-align: center;
+    padding: 160px 0px;
+}
+
+.headerstyle {
+    color: #007765;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+    align-self: center;
+}
+
+.textstyle {
+    color: black;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+    padding: 0px 55px;
+    margin-bottom: 92px;
+    text-align: justify;
+}
+
+.banner2 {
+    height: 483px;
+    background-image: url(../images/banner2.png);
+}
+
+.banner2text {
+    max-width: 1219px;
+    padding: 125px 160px;
+    padding-bottom: 92px;
+    margin: auto 0px;
+    color: white;
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.teamcard {
+    text-align: center;
+    padding: 25px 85px;
+}
+
+.persphoto {}
+
+.persname {
+    clear: both;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #007765;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.perspos {
+    clear: both;
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.teammates
+{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+#footer {
+    background-color: #333333;
+    color: white;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    padding: 48px 340px 64px 340px;
+}
+
+#team {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%
+}
+
+#theteam
+{
+  background-color: #eeeeee;
+  padding: 55px 10px;
+}
+
+#ppclogo {
+    float: left;
+    width: 115px;
+    height: 115px;
+    margin-right: 48px;
+    margin-left: 55px;
+}
+
+#topbar {
+    position: fixed;
+    width: 1219px;
+    height: 84px;
+    background-color: #007765;
+}
+
+#PiedPiperLogo {
+    margin: 20px 55px;
+}
+
+#TopMenu {
+    float: right;
+    margin: 25px 55px;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+.TopMenuFixer {
+    height: 84px;
+}
