@@ -1,9 +1,9 @@
-#topmenu
-{
-    
-}
-
 .bordersview
 {
     border: 1px black solid;
+}
+
+.partcoloring
+{
+    background-color: #E5E3E2;
 }
