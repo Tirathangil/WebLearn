@@ -36,7 +36,7 @@
     <div class="text-center partcoloring bordersview">
         <h1>Оформление текста</h1>
     </div>
-    <div style="margin: auto, 30px;">
+    <div>
         Так выглядит основной текст.
         <div class="lead">
             Это ведущий текст (.lead)
@@ -95,9 +95,263 @@
         высоте
         </pre>
         </div>
-        
+        <dl class="bordersview">
+            <dt>Список определений &lt;dl&gt;</dt>
+            <dd>Контейнер группы тегов, которые создают список определений с расшифровкой</dd>
+            <dt>Тег &lt;dt&gt;</dt>
+            <dd>Тег термина</dd>
+            <dt>Тег &lt;dd&gt;</dt>
+            <dd>Тег, в котором заключается описание термина</dd>
+        </dl>
+        <dl class="list-inline list-inline-item bordersview">
+            <dt class="list-inline-item">Список определений &lt;dl&gt; с классами .list-inline и .list-inline-item</dt>
+            <dd>Контейнер группы тегов, которые создают список определений с расшифровкой</dd>
+            <dt class="list-inline-item">Тег &lt;dt&gt;</dt>
+            <dd>Тег термина</dd>
+            <dt class="list-inline-item">Тег &lt;dd&gt;</dt>
+            <dd>Тег, в котором заключается описание термина</dd>
+        </dl>
+        <dl class="row bordersview">
+            <dt class="col-sm-3">Список определений &lt;dl&gt; с контейнером row</dt>
+            <dd class="col-sm-9">Контейнер группы тегов, которые создают список определений с расшифровкой, с сеткой Bootstrap</dd>
+            <dt class="col-sm-3">Тег &lt;dt&gt;</dt>
+            <dd class="col-sm-9">Тег термина</dd>
+            <dt class="col-sm-3">Тег &lt;dd&gt;</dt>
+            <dd class="col-sm-9">Тег, в котором заключается описание термина</dd>
+        </dl>
+        <samp>Это образец текста, выделенный парой тегов &lt;samp&gt;</samp>
+        Переменные отображаются как <var>R</var>=<var>U</var>/<var>I</var>
     </div>
+    <div class="text-center partcoloring bordersview">
+        <h1>Таблицы</h1>
+    </div>
+    <div>
+        <table class="table">
+            <thead class="text-center">
+                <td>Базовая таблица с классом .table</td>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ячейка 1</td>
+                    <td>Ячейка 2</td>
+                    <td>Ячейка 3</td>
+                </tr>
+                <tr>
+                    <td>Ячейка 1</td>
+                    <td>Ячейка 2</td>
+                    <td>Ячейка 3</td>
+                </tr>
+                <tr>
+                    <td>Ячейка 1</td>
+                    <td>Ячейка 2</td>
+                    <td>Ячейка 3</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table-dark">
+            <thead class="text-center">
+                <td>Темная таблица с классом .table-dark</td>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ячейка 1</td>
+                    <td>Ячейка 2</td>
+                    <td>Ячейка 3</td>
+                </tr>
+                <tr>
+                    <td>Ячейка 1</td>
+                    <td>Ячейка 2</td>
+                    <td>Ячейка 3</td>
+                </tr>
+                <tr>
+                    <td>Ячейка 1</td>
+                    <td>Ячейка 2</td>
+                    <td>Ячейка 3</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-striped">
+            <thead class="text-center">
+                <td>Полосатая таблица с классом .table и .table-striped</td>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ячейка 1</td>
+                    <td>Ячейка 2</td>
+                    <td>Ячейка 3</td>
+                </tr>
+                <tr>
+                    <td>Ячейка 1</td>
+                    <td>Ячейка 2</td>
+                    <td>Ячейка 3</td>
+                </tr>
+                <tr>
+                    <td>Ячейка 1</td>
+                    <td>Ячейка 2</td>
+                    <td>Ячейка 3</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-bordered">
+            <thead class="text-center">
+                <td>Обрамленная таблица с классом .table и .table-bordered</td>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ячейка 1</td>
+                    <td>Ячейка 2</td>
+                    <td>Ячейка 3</td>
+                </tr>
+                <tr>
+                    <td>Ячейка 1</td>
+                    <td>Ячейка 2</td>
+                    <td>Ячейка 3</td>
+                </tr>
+                <tr>
+                    <td>Ячейка 1</td>
+                    <td>Ячейка 2</td>
+                    <td>Ячейка 3</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-hover">
+            <thead class="text-center">
+                <td>Таблица с подсветкой строк (классы .table и .table-hover)</td>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ячейка 1</td>
+                    <td>Ячейка 2</td>
+                    <td>Ячейка 3</td>
+                </tr>
+                <tr>
+                    <td>Ячейка 1</td>
+                    <td>Ячейка 2</td>
+                    <td>Ячейка 3</td>
+                </tr>
+                <tr>
+                    <td>Ячейка 1</td>
+                    <td>Ячейка 2</td>
+                    <td>Ячейка 3</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table">
+            <thead class="text-center thead-light">
+                <th>Таблица со светлым заголовком (thead-light)</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ячейка 1</td>
+                    <td>Ячейка 2</td>
+                    <td>Ячейка 3</td>
+                </tr>
+                <tr>
+                    <td>Ячейка 1</td>
+                    <td>Ячейка 2</td>
+                    <td>Ячейка 3</td>
+                </tr>
+                <tr>
+                    <td>Ячейка 1</td>
+                    <td>Ячейка 2</td>
+                    <td>Ячейка 3</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table">
+            <thead class="text-center thead-dark">
+                <tr>
+                    <th>Таблица с темным заголовком (thead-dark)</th>
+                </tr>
 
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ячейка 1</td>
+                    <td>Ячейка 2</td>
+                    <td>Ячейка 3</td>
+                </tr>
+                <tr>
+                    <td>Ячейка 1</td>
+                    <td>Ячейка 2</td>
+                    <td>Ячейка 3</td>
+                </tr>
+                <tr>
+                    <td>Ячейка 1</td>
+                    <td>Ячейка 2</td>
+                    <td>Ячейка 3</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm">
+            <thead class="text-center">
+                <td>Маленькая таблица (класс .table-sm вместе с классом .table)</td>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ячейка 1</td>
+                    <td>Ячейка 2</td>
+                    <td>Ячейка 3</td>
+                </tr>
+                <tr>
+                    <td>Ячейка 1</td>
+                    <td>Ячейка 2</td>
+                    <td>Ячейка 3</td>
+                </tr>
+                <tr>
+                    <td>Ячейка 1</td>
+                    <td>Ячейка 2</td>
+                    <td>Ячейка 3</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table">
+            <thead class="text-center">
+                <td>Цвета ячеек</td>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="table-active">.table-active</td>
+                    <td>Ячейка 2</td>
+                    <td class="table-success">.table-success</td>
+                </tr>
+                <tr>
+                    <td>Ячейка 1</td>
+                    <td class="table-info">.table-info</td>
+                    <td>Ячейка 3</td>
+                </tr>
+                <tr>
+                    <td class="table-danger">.table-danger</td>
+                    <td>Ячейка 2</td>
+                    <td class="table-warning">.table-warning</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="table-responsive">
+            <table class="table">
+                <thead class="text-center">
+                    <td>Адаптивная таблица (группа классов .table-responsive)</td>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ячейка 1</td>
+                        <td>Ячейка 2</td>
+                        <td>Ячейка 3</td>
+                    </tr>
+                    <tr>
+                        <td>Ячейка 1</td>
+                        <td>Ячейка 2</td>
+                        <td>Ячейка 3</td>
+                    </tr>
+                    <tr>
+                        <td>Ячейка 1</td>
+                        <td>Ячейка 2</td>
+                        <td>Ячейка 3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </body>
 
 </html>
