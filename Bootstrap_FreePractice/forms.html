@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--Подключение всего необходимого для Bootstrap 4 -->
+    <link href="lib/css/bootstrap/bootstrap.css" rel="stylesheet">
+    <script src="lib/js/jquery/jquery.min.js" defer></script>
+    <script src="lib/js/popper/popper.min.js" async></script>
+    <script src="lib/js/bootstrap/bootstrap.js" defer></script>
+
+    <link href="css/main.css" rel="stylesheet">
+    <title>Шпаргалка по Bootstrap 4</title>
+</head>
+
+<body>
+    <h1 class="text-center">
+        Bootstrap 4: Формы
+    </h1>
+    <div>
+        <form>
+            <div>
+                <strong>Текстовое поле без .form-control</strong>
+                <input size="8" maxlength="16" name="Input1" value="Здрасте">
+            </div>
+            <div>
+                <strong>Текстовое поле c .form-control</strong>
+                <input size="8" maxlength="16" name="Input1" value="Здрасте" class="form-control">
+            </div>
+            <div class="bordersview form-inline">
+                <strong>Текстовое поле с .form-inline</strong>
+                <input size="8" maxlength="16" name="Input1" value="Здрасте" class="form-inline">
+            </div>
+            <div>
+                <strong>Текстовое поле для ввода пароля</strong>
+                <input size="8" maxlength="16" type=password>
+            </div>
+        </form>
+        <form>
+            <strong>Размеры полей</strong><br>
+            <input type="text" class="form-control-lg" value="Поле с классом .form-control-lg" size="40"><br>
+            <input type="text" value="Поле с размером по умолчанию" size="40"><br>
+            <input type="text" class="form-control-sm" value="Поле с классом .form-control-sm" size="40"><br>
+        </form>
+    </div>
+</body>
+
+</html>
