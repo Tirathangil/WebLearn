@@ -1,0 +1,59 @@
+body
+{
+    margin: 0 0;
+}
+
+#Login
+{
+    background-color: white;
+    width: 78px;
+    height: 40px;
+    border-color: black;
+    border-radius: 5px;
+    border-style: solid;
+}
+
+#Login:hover
+{
+    background-color: lightgray;
+}
+
+#Login:active
+{
+    background-color: darkgray;
+}
+
+.header
+{
+    position: fixed;
+    height: 72px;
+    width: 100%;
+    margin: 0px;
+    box-shadow: 0 1px 10px;
+}
+
+#headerfix
+{
+    
+    
+}
+
+.row
+{
+    padding: 0 80px;
+}
+
+.graybg
+{
+    background-color: gray;
+}
+
+.bluebg
+{
+    background-color: blue;
+}
+
+.redbg
+{
+    background-color: red;
+}
