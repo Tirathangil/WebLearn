@@ -3,25 +3,101 @@
 <head>
     <title>UberEats</title>
     <link rel="stylesheet" href="https://unpkg.com/flexboxgrid2@7.2.1/flexboxgrid2.min.css">
-    <link rel="stylesheet" href="css/ubereats.css" </head>
+    <link rel="stylesheet" href="css/ubereats.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
 
 <body>
-    <div class="row middle-xs between-xs header">
-        <div class="col-xl-2">
+    <div class="row middle-xs between-xs header lg-padding">
+        <div class="col-xs-6">
             <img src="img/logo.svg">
         </div>
-        <div class="col-xl-2">
-            <div class="row around-xl middle-xl">
-                <div class="col-xl">
-                    <button id="Login">Войти</button>
-                </div>
-                <div class="col-xl">
-                    <img src="img/basket.svg">
-                </div>
+        <div class="col-xs-6 middle-xs end-xs">
+            <div class="row middle-xs end-xs">
+                <button id="Login">Войти</button>
+                <img src="img/basket.svg" id="Basket">
             </div>
         </div>
     </div>
+    <div id="headerfix">
+    </div>
+    <div class="row middle-xs lg-padding">
+        <div class="col-xs">
+            <input type="search" value="Поиск по ресторанам и кухням" id="SearchField">
+        </div>
+    </div>
 
+    <div class="row lg-padding">
+        <div class="col-xs" id="Restaurant">
+            Рестораны в Москве
+        </div>
+    </div>
+
+    <div class="row between-xs lg-padding">
+        <div class="col-xl-4 col-md-6 col-xs-12 restaurants center-xs">
+            <img src="img/mcdonald.png" class="restlogo">
+            <div class="start-xs">
+                <div class="restname">Макдоналдс - Газетный</div>
+                <div class="restfood">&#8381;&#8381; &#8226; Бургеры</div>
+                <div class="resttime">25 - 35 минут</div>
+            </div>
+        </div>
+        <div class="col-xl-4 col-md-6 col-xs-12 restaurants">
+            <img src="img/dimsum.png" class="restlogo">
+            <div class="restname">DimSum &amp; Co — ЦДМ</div>
+            <div class="restfood">&#8381; &#8226; Японская &#8226; Китайская &#8226; Азиатская</div>
+            <div class="resttime">40 - 50 минут</div>
+        </div>
+        <div class="col-xl-4 col-md-6 col-xs-12 restaurants">
+            <img src="img/dvigok.png" class="restlogo">
+            <div class="restname">ДвижОК - Манежная</div>
+            <div class="restfood">&#8381; &#8226; Американская &#8226; Европейская</div>
+            <div class="resttime">35 - 45 минут</div>
+        </div>
+        <div class="col-xl-4 col-md-6 col-xs-12 restaurants center-xs">
+            <img src="img/nyahna.png" class="restlogo">
+            <div class="start-xs">
+                <div class="restname">НЯ - NHA</div>
+                <div class="restfood">&#8381;&#8381; &#8226; Вьетнамская</div>
+                <div class="resttime">30 - 40 минут</div>
+            </div>
+        </div>
+        <div class="col-xl-4 col-md-6 col-xs-12 restaurants">
+            <img src="img/tochkadzy.png" class="restlogo">
+            <div class="restname">Точка Дзы - Цветной</div>
+            <div class="restfood">&#8381;&#8381; &#8226; Вьетнамская</div>
+            <div class="resttime">40 - 50 минут</div>
+        </div>
+        <div class="col-xl-4 col-md-6 col-xs-12 restaurants">
+            <img src="img/cinnabon.png" class="restlogo">
+            <div class="restname">Cinnabon</div>
+            <div class="restfood">&#8381; &#8226; Выпечка &#8226; Десерты &#8226; Капкейки</div>
+            <div class="resttime">25 - 35 минут</div>
+        </div>
+        <div class="col-xl-4 col-md-6 col-xs-12 restaurants center-xs">
+            <img src="img/pizzelove.png" class="restlogo">
+            <div class="start-xs">
+                <div class="restname">PIZZELOVE</div>
+                <div class="restfood">&#8381;&#8381; &#8226; Пицца</div>
+                <div class="resttime">15 - 25 минут</div>
+            </div>
+        </div>
+        <div class="col-xl-4 col-md-6 col-xs-12 restaurants">
+            <img src="img/zucafe.png" class="restlogo">
+            <div class="restname">Zю кафе - Тверская</div>
+            <div class="restfood">&#8381;&#8381; &#8226; Японская</div>
+            <div class="resttime">25 - 35 минут</div>
+        </div>
+        <div class="col-xl-4 col-md-6 col-xs-12 restaurants">
+            <img src="img/bqcafe.png" class="restlogo">
+            <div class="restname">Bar BQ Cafe - Манежная</div>
+            <div class="restfood">&#8381; &#8381; &#8381; &#8226; Европейская</div>
+            <div class="resttime">35 - 45 минут</div>
+        </div>
+    </div>
+    <div id="footer">
+    
+    </div>
 
 </body>
 
