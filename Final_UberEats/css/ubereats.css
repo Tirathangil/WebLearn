@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Noto Emoji';
+  src: url(https://github.com/googlefonts/noto-emoji/blob/master/fonts/NotoEmoji-Regular.ttf);
+}
+
 @media all and (min-width: 575px) {
     #Login {
         margin-right: 27px;
@@ -83,13 +88,38 @@ body {
     height: 72px;
 }
 
-#footer
-{
+#footer {
     width: 100%;
     margin-top: 100px;
-    height: 100px;
     background-color: #262626;
+}
+
+#footlogo
+{
+    margin-top: 56px;
+    margin-bottom: 40px;
+}
+
+#footmenu
+{
+    padding-top: 32px;
+}
+
+#langsel
+{
     color: white;
+    background-color: 3B3B3B;
+    border-radius: 2px;
+    padding-left: 16px;
+    font-family: 'Noto Emoji', Roboto;
+    font-size:  16px;
+    
+    width: 227px;
+    height: 40px;
+}
+
+.globeicon
+{
 }
 
 .header {
@@ -104,10 +134,12 @@ body {
 .restaurants {
     margin-top: 16px;
     justify-content: flex-start;
+    transition-duration: 1s;
 }
 
 .restaurants:hover {
     background-color: #EEEEEE;
+    transition-duration: 0.5s;
 }
 
 .restlogo {
