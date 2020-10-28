@@ -4,7 +4,7 @@
     <title>UberEats</title>
     <link rel="stylesheet" href="https://unpkg.com/flexboxgrid2@7.2.1/flexboxgrid2.min.css">
     <link rel="stylesheet" href="css/ubereats.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="css/roboto.css" rel="stylesheet">
     <link href="css/notoemoji.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -20,7 +20,12 @@
             </div>
         </div>
     </div>
-    <div id="headerfix">
+    <div id="topbutton">
+        <a href="#top">
+            <img src="img/btn-up.png">
+        </a>
+    </div>
+    <div id="headerfix" id="top">
     </div>
     <div class="row middle-xs lg-padding">
         <div class="col-xs">
@@ -109,19 +114,75 @@
         </div>
         <div class="row lg-padding" id="footmenu">
             <div class="col-md-4 col-xs-12">
-                <select id="langsel">
-                    <option class="globeicon">
-                        &#127760; Русский
-                    </option>
-                </select>
-                
+                <div>
+                    <select id="langsel">
+                        <option class="globeicon">
+                            &#127760; Русский
+                        </option>
+                    </select>
+                </div>
+                <div id="hashtag">
+                    <span id="greenhash">&#35;</span>UberEats
+                </div>
+                <div>
+                    <img src="img/facebook.svg" class="social">
+                    <img src="img/twitter.svg" class="social">
+                    <img src="img/instagram.svg" class="social">
+                </div>
             </div>
             <div class="col-md-4 col-xs-12">
-                 <span class="globeicon">&#127760; &#x1F310;</span>
+                <div class="footmenu-margin">
+                    Об UberEats
+                </div>
+                <div class="footmenu-margin">
+                    Станьте партнером по доставке
+                </div>
+                <div class="footmenu-margin">
+                    Станьте партнером-рестораном
+                </div>
             </div>
             <div class="col-md-4 col-xs-12">
-                
+                <div class="footmenu-margin">
+                    Все города
+                </div>
+                <div class="footmenu-margin">
+                    Цены
+                </div>
+                <div class="footmenu-margin">
+                    Помощь
+                </div>
+                <div class="footmenu-margin">
+                    FAQs
+                </div>
             </div>
+        </div>
+        <div class="row lg-padding">
+            <div class="col-xs">
+                <hr id="aftermenu">
+            </div>
+        </div>
+        <div class="row lg-padding center-xs">
+            <div class="col-xs">
+                <img src="img/appstore.svg" class="appspadding vmargin-40">
+                <img src="img/gplay.svg" class="appspadding vmargin-40">
+            </div>
+        </div>
+        <div class="row lg-padding">
+            <div class="col-xs">
+                <hr>
+            </div>
+        </div>
+        <div class="row lg-padding vmargin-40 whitefont">
+            <div class="col-md-4 col-xs-12">
+                &copy; 2017 Uber Technologies Inc.
+            </div>
+            <div class="col-md-4 col-xs-12">
+                Обработка персональных данных
+            </div>
+            <div class="col-md-4 col-xs-12">
+                Пользовательское соглашение
+            </div>
+
         </div>
     </div>
 </body>

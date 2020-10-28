@@ -5,11 +5,12 @@
       OR
       <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>
 */
+
 @font-face {font-family: "Noto Emoji";
-    src: url("http://db.onlinewebfonts.com/t/7e95ad5934d900bc13b364eb5f1fe318.eot"); /* IE9*/
-    src: url("http://db.onlinewebfonts.com/t/7e95ad5934d900bc13b364eb5f1fe318.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("http://db.onlinewebfonts.com/t/7e95ad5934d900bc13b364eb5f1fe318.woff2") format("woff2"), /* chrome firefox */
-    url("http://db.onlinewebfonts.com/t/7e95ad5934d900bc13b364eb5f1fe318.woff") format("woff"), /* chrome firefox */
-    url("http://db.onlinewebfonts.com/t/7e95ad5934d900bc13b364eb5f1fe318.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
-    url("http://db.onlinewebfonts.com/t/7e95ad5934d900bc13b364eb5f1fe318.svg#Noto Emoji") format("svg"); /* iOS 4.1- */
+    src: url("../fonts/notoemoji.eot"); /* IE9*/
+    src: url("../fonts/notoemoji-oldie.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/notoemoji.woff2") format("woff2"), /* chrome firefox */
+    url("../fonts/notoemoji..woff") format("woff"), /* chrome firefox */
+    url("../fonts/notoemoji..ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+    url("../fonts/notoemoji..svg#Noto Emoji") format("svg"); /* iOS 4.1- */
 }
