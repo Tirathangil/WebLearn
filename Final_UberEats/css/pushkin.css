@@ -1,0 +1,16 @@
+body {
+    background-image: url(../img/pushkin-bg.png);
+    background-repeat: no-repeat;
+    background-position: 0 72px;
+    background-size: 100%;
+}
+
+#resttitle {
+    font-size: 36px;
+    font-family: 'Roboto';
+} 
+
+.vmargin-80 {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
