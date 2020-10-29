@@ -7,12 +7,14 @@
 @media all and (max-width: 991px) {
     .lg-padding {
         padding: 0 8px;
+        margin: 0px;
     }
 }
 
 @media all and (min-width: 992px) {
     .lg-padding {
         padding: 0 80px;
+        margin: 0px;
     }
 }
 
@@ -26,14 +28,12 @@
     }
 }
 
-html
-{
-     scroll-behavior: smooth;   
+:root {
+    scroll-behavior: smooth;
 }
 
 body {
     margin: 0 0;
-    padding: 0 0;
 }
 
 #Login {
@@ -63,7 +63,6 @@ body {
     width: 100%;
     border-style: none;
     border-bottom-style: solid;
-    margin-top: 56px;
 
     font-family: Roboto;
     font-size: 16px;
@@ -81,8 +80,6 @@ body {
     font-weight: normal;
     font-size: 22px;
     line-height: 34px;
-
-    margin-top: 56px;
 }
 
 #headerfix {
@@ -92,12 +89,8 @@ body {
 #footer {
     width: 100%;
     margin-top: 100px;
+    padding-top: 16px;
     background-color: #262626;
-}
-
-#footlogo {
-    margin-top: 56px;
-    margin-bottom: 40px;
 }
 
 #footmenu {
@@ -131,15 +124,12 @@ body {
     color: #49A144;
 }
 
-#aftermenu {
-    margin-top: 40px;
-}
-
 #topbutton {
     position: fixed;
     right: 16px;
     bottom: 24px;
 }
+
 #topbutton a:active {
     transition-duration: 1s;
 }
@@ -151,7 +141,13 @@ body {
     font-size: 11px;
 }
 
-.vmargin-40 {
+.vmargin-56
+{
+    margin-top: 56px;
+    margin-bottom: 56px;
+}
+
+.vpadding-40 {
     padding-top: 40px;
     padding-bottom: 40px;
 }
@@ -168,6 +164,7 @@ body {
 
 .social {
     padding-right: 20px;
+    padding-bottom: 20px;
 }
 
 .header {
