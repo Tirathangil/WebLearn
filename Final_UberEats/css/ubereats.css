@@ -128,7 +128,9 @@ body {
     position: fixed;
     right: 16px;
     bottom: 24px;
+    opacity: 0.5
 }
+
 
 #topbutton a:active {
     transition-duration: 1s;
@@ -141,8 +143,7 @@ body {
     font-size: 11px;
 }
 
-.vmargin-56
-{
+.vmargin-56 {
     margin-top: 56px;
     margin-bottom: 56px;
 }
