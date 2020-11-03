@@ -143,11 +143,22 @@ a
     background-color: white;
 }
 
+.headtitle {
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 34px;
+}
+
 .whitefont {
     color: white;
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 11px;
+}
+
+.nopadding {
+    padding: 0px;
 }
 
 .vmargin-56 {

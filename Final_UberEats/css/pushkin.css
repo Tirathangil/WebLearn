@@ -8,13 +8,48 @@ body {
 #resttitle {
     font-size: 36px;
     font-family: 'Roboto';
-    margin-bottom: 54px;
+    margin-bottom: 38px;
 } 
 
 #restaurant
 {
     background-color: white;
     padding: 38px; 
+}
+
+#resteat {
+    background-color: white;
+}
+
+.pushkinmenu {
+    background-color: white;
+    border-top: 1px solid;
+    border-top-color: rgba(117, 117, 117, 0.2);
+}
+
+.restmenu {
+    background-color: white;
+    font-family: 'Roboto';
+    font-size: 16px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.restmenu a {
+    color: black;
+    text-decoration: none;
+    padding-right: 40px;
+    padding-left: 0px;
+}
+
+.restmenu a:hover {
+    color: green;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.infotext {
+    margin-top: 16px;
 }
 
 .timetable
@@ -27,6 +62,11 @@ body {
     color: white;
     background-color: black;
     border-radius: 16px;
+    margin-top: 16px;
+}
+
+.vmargin-16 {
+    margin-top: 16px;
 }
 
 .vmargin-80 {
