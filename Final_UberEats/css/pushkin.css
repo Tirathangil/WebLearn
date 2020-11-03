@@ -8,7 +8,26 @@ body {
 #resttitle {
     font-size: 36px;
     font-family: 'Roboto';
+    margin-bottom: 54px;
 } 
+
+#restaurant
+{
+    background-color: white;
+    padding: 38px; 
+}
+
+.timetable
+{
+    display: flex;
+    height: 32px;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    border-radius: 16px;
+}
 
 .vmargin-80 {
     margin-top: 80px;

@@ -1,0 +1,176 @@
+@media all and (min-width: 575px) {
+    #Login {
+        margin-right: 27px;
+    }
+}
+
+@media all and (max-width: 991px) {
+    .lg-padding {
+        padding: 0 8px;
+        margin: 0px;
+    }
+}
+
+@media all and (min-width: 992px) {
+    .lg-padding {
+        padding: 0 80px;
+        margin: 0px;
+    }
+}
+
+@media all and (max-width: 575px) {
+    #Basket {
+        display: none;
+    }
+
+    #Login {
+        margin-right: 16px;
+    }
+}
+
+:root {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 0;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+#headerfix {
+    height: 72px;
+}
+
+#Login {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 24px;
+
+    background-color: white;
+    width: 78px;
+    height: 40px;
+    border-color: black;
+    border-radius: 5px;
+    border-style: solid;
+}
+
+#Login:hover {
+    background-color: lightgray;
+}
+
+#Login:active {
+    background-color: darkgray;
+}
+
+#SearchField {
+    width: 100%;
+    border-style: none;
+    border-bottom-style: solid;
+
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 24px;
+    color: #626262;
+}
+
+#SearchField:focus {
+    outline: 0;
+    color: black;
+}
+
+#footer {
+    width: 100%;
+    margin-top: 100px;
+    padding-top: 16px;
+    background-color: #262626;
+}
+
+#footmenu {
+    padding-top: 32px;
+    color: white;
+}
+
+#langsel {
+    color: white;
+    background-color: 3B3B3B;
+    border-radius: 2px;
+    padding-left: 16px;
+    margin-bottom: 33px;
+    font-family: 'Noto Emoji', Roboto;
+    font-size: 16px;
+
+    width: 227px;
+    height: 40px;
+}
+
+#hashtag {
+    font-family: Roboto;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#greenhash {
+    font-family: Roboto;
+    font-size: 16px;
+    color: #49A144;
+}
+
+#topbutton {
+    position: fixed;
+    right: 16px;
+    bottom: 24px;
+    opacity: 0.5
+}
+
+
+#topbutton a:active {
+    transition-duration: 1s;
+}
+
+.header {
+    position: fixed;
+    height: 72px;
+    width: 100%;
+    margin: 0px;
+    box-shadow: 0 0 16px rgba(38, 38, 38, 0.16);
+    background-color: white;
+}
+
+.whitefont {
+    color: white;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 11px;
+}
+
+.vmargin-56 {
+    margin-top: 56px;
+    margin-bottom: 56px;
+}
+
+.vpadding-40 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.appspadding {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.footmenu-margin {
+    padding-top: 3px;
+    margin-bottom: 20px
+}
+
+.social {
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
