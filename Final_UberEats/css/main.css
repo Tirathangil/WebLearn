@@ -150,6 +150,28 @@ a
     line-height: 34px;
 }
 
+.headname {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #1D1D1D;
+    padding-top: 16px;
+}
+
+.headdesc {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: #626262;
+    padding-top: 4px;
+}
+
 .whitefont {
     color: white;
     font-family: 'Roboto';
