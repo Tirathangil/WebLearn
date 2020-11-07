@@ -61,7 +61,7 @@ a
 }
 
 #Login:hover {
-    background-color: lightgray;
+    background-color: #DCFFDC;
 }
 
 #Login:active {
@@ -86,7 +86,7 @@ a
 
 #footer {
     width: 100%;
-    margin-top: 100px;
+    margin-top: 80px;
     padding-top: 16px;
     background-color: #262626;
 }
@@ -128,6 +128,11 @@ a
     bottom: 24px;
     opacity: 0.5
 }
+
+#topbutton:hover {
+    opacity: 0.8;
+}
+
 
 
 #topbutton a:active {

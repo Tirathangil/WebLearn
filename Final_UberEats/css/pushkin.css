@@ -6,6 +6,7 @@
     #restmenuline {
         color: #757575;
         width: 50px;
+        margin-bottom: 40px;
     }
 
     .restmenu {
@@ -32,6 +33,18 @@
         font-size: 16px;
         padding-top: 32px;
         padding-bottom: 32px;
+    }
+
+    .vmargin-24 {
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+}
+
+@media all and (min-width: 575px) and (max-width: 991px) {
+    .vmargin-24 {
+        margin-top: 0px;
+        margin-bottom: 32px;
     }
 }
 
@@ -63,10 +76,7 @@ body {
 .foodcell {
     background-color: white;
     border: 1px solid rgba(117, 117, 117, 0.2);
-    box-sizing: border-box;
     border-radius: 2px;
-    margin-right: 16px;
-    margin-top: 16px;
 }
 
 .restmenu a {
@@ -74,10 +84,10 @@ body {
     text-decoration: none;
     padding-right: 40px;
     padding-left: 0px;
+    margin-right: 16px;
 }
 
 .restmenu a:hover {
-    color: green;
     font-weight: 600;
     text-decoration: none;
 }
@@ -107,12 +117,17 @@ body {
     line-height: 21px;
 }
 
+.items {
+    margin-left: 16px;
+}
 
 .foodsrc {
     float: right;
 }
 
-.vpadding-32 {}
+.vmargin-32 {
+    margin-bottom: 32px;
+}
 
 .vmargin-16 {
     margin-top: 16px;
@@ -121,4 +136,14 @@ body {
 .vmargin-80 {
     margin-top: 80px;
     margin-bottom: 80px;
+}
+
+.hoveritem {
+    background-color: white;
+    transition-duration: 1s;
+}
+
+.hoveritem:hover {
+    background-color: #DCFFDC;
+    transition-duration: 0.5s;
 }
