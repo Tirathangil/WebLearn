@@ -1,0 +1,18 @@
+td {
+    height: 64px;
+    width: 64px;
+    background-color: #87A5DB;
+    #background-color: #FF8B72;
+    border: solid black 1px;
+    vertical-align: center;
+    text-align: center;
+    
+    font-size: 20px;
+    font-weight: 600;
+}
+
+table
+{
+    padding: 0px;
+    border: solid black 1px;
+}
