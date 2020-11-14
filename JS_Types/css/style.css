@@ -1,0 +1,23 @@
+#phone {
+    font-size: 24px;
+    border: none;
+    border-bottom: solid 2px black;
+    outline: none;
+    width: 350px;
+}
+
+#check {
+    font-size: 24px;
+    background-color: white;
+    border-style: dotted;
+    border-radius: 5px;
+    height: 48px;
+}
+
+.valid {
+    background-color: #98F098;
+}
+
+.invalid {
+    background-color: #FFA2A2;
+}
