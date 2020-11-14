@@ -1,0 +1,32 @@
+.element {
+    width: 300px;
+    height: 300px;
+    padding: 24px;
+    margin: 10px;
+    float: left;
+    
+    border: solid black 1px;
+}
+
+div .container {
+    padding: 10px;
+    margin: 12px;
+}
+
+.green {
+    background-color: palegreen;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.red {
+    background-color: indianred;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.blue {
+    background-color: deepskyblue;
+    font-size: 24px;
+    font-weight: 600;
+}
