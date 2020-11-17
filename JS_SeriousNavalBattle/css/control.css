@@ -5,17 +5,14 @@ body {
     align-items: center;
 }
 
-table {
+.battlegrid {
     border: solid 3px green;
     border-spacing: 0px;
 }
 
-td {
+.battlegrid-cell {
     color: green;
-    font-family: monospace;
-    font-size: 32px;
-    text-align: center;
-    vertical-align: middle;
+    
     border: dashed 1px green;
     width: 48px;
     height: 48px;
@@ -23,11 +20,31 @@ td {
     transition-duration: 0.5s;
 }
 
-td:hover {
+.battlegrid-cell:hover {
     border: solid 1px;
     border-color: lightgreen;
     background-color: green;
     color: black;
+}
+
+.battlegrid-xcoord {
+    width: 48px;
+    height: 48px;
+    color: green;
+    font-family: monospace;
+    font-size: 32px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.battlegrid-ycoord {
+    width: 48px;
+    height: 48px;
+    color: green;
+    font-family: monospace;
+    font-size: 32px;
+    text-align: center;
+    vertical-align: middle;
 }
 
 #BattleGrid {
