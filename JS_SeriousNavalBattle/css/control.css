@@ -1,8 +1,76 @@
+@font-face {
+    font-family: 'DSEG7';
+    src: url(../fonts/DSEG/DSEG7ClassicMini-Bold.woff) format("woff");
+}
+
+@font-face {
+    font-family: 'DSEG14';
+    src: url(../fonts/DSEG14/DSEG14ClassicMini-Regular.woff) format("woff");
+}
+
 body {
     background-image: url(../img/bg.png);
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 64px;
+}
+
+td {
+    width: 32px;
+    height: 32px;
+}
+
+.fcs {
+    display: flex;
+    justify-content: space-around;
+}
+
+.control-panel {
+    display: flex;
+    background-image: url(../img/panel-bg.png);
+    border: #989898 outset 3px;
+    border-radius: 12px;
+    margin-left: 16px;
+}
+
+.gauge {
+    background-color: black;
+    border: inset gray 2px;
+    margin: 10px;
+    padding: 5px;
+    height: 28px;
+}
+
+.twodigitsgauge {
+    position: relative;
+    color: #003E00;
+    top: 0px;
+    left: 0;
+    font-family: DSEG7;
+    font-size: 24px;
+    z-index: 0;
+}
+
+.twodigitscounter {
+    position: relative;
+    color: #68EA68;
+    top: -26px;
+    left: 0px;
+    z-index: 1;
+    font-family: DSEG7;
+    font-size: 24px;
+    z-index: 3;
+}
+
+.monitor
+{
+    border-color: #989898;
+    border-width: 16px;
+    border-radius: 20px;
+    border-style: ridge groove groove ridge;
+    padding: 10px;
+    background-image: url(../img/screennoise.png);
 }
 
 .battlegrid {
@@ -14,41 +82,31 @@ body {
     color: green;
     
     border: dashed 1px green;
-    width: 48px;
-    height: 48px;
     margin: 0px;
     transition-duration: 0.5s;
 }
 
 .battlegrid-cell:hover {
     border: solid 1px;
-    border-color: lightgreen;
+    border-color: green;
     background-color: green;
     color: black;
 }
 
 .battlegrid-xcoord {
-    width: 48px;
-    height: 48px;
     color: green;
-    font-family: monospace;
-    font-size: 32px;
+    font-family: DSEG14;
+    font-size: 20px;
+    font-weight: bold;
     text-align: center;
     vertical-align: middle;
 }
 
 .battlegrid-ycoord {
-    width: 48px;
-    height: 48px;
     color: green;
-    font-family: monospace;
-    font-size: 32px;
+    font-family: DSEG14;
+    font-size: 20px;
+    font-weight: bold;
     text-align: center;
     vertical-align: middle;
-}
-
-#BattleGrid {
-    margin-top: 200px;
-    height: 480px;
-    width: 480px;
 }
