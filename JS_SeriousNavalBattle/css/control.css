@@ -21,32 +21,25 @@ td {
     height: 32px;
 }
 
-.fcs {
-    display: flex;
-    justify-content: space-around;
-}
-
-.control-panel {
-    display: flex;
-    background-image: url(../img/panel-bg.png);
-    border: #989898 outset 3px;
-    border-radius: 12px;
-    margin-left: 16px;
-}
+/* Digits indicator style */
 
 .gauge {
     background-color: black;
     border: inset gray 2px;
-    margin: 10px;
-    padding: 5px;
-    height: 28px;
+    height: 32px;
 }
+
+.digits-indicator {
+    padding: 0;
+    margin: 0;
+    margin: 2px;
+}
+
 
 .twodigitsgauge {
     position: relative;
+    text-align: right;
     color: #003E00;
-    top: 0px;
-    left: 0;
     font-family: DSEG7;
     font-size: 24px;
     z-index: 0;
@@ -54,14 +47,84 @@ td {
 
 .twodigitscounter {
     position: relative;
+    text-align: right;
     color: #68EA68;
     top: -26px;
-    left: 0px;
-    z-index: 1;
     font-family: DSEG7;
     font-size: 24px;
-    z-index: 3;
+    z-index: 1;
 }
+/* End Digits Indicator style */
+
+.fcs {
+    display: flex;
+    justify-content: space-around;
+}
+
+.control-panel {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../img/panel-bg.png);
+    border: #989898 outset 3px;
+    border-radius: 12px;
+    margin-left: 16px;
+}
+
+.gauge-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.gaugesign {
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    border: outset 1px grey;
+    background-image: url(../img/panel-bg.png);
+    color: white;
+    font-family: monospace;
+    font-weight: 800;
+    font-size: 16px; 
+}
+
+.gaugelabel {
+    padding: 2px 10px;
+    color: #DDDDDD;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.control-panel-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: #CCCCCC solid 4px;
+    margin: 10px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.control-panel-grouplabel {
+    padding: 2px 10px;
+    margin-top: -28px;
+    color: #DDDDDD;
+    background-image: url(../img/panel-bg.png);
+    border: #CCCCCC 3px solid;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.rivets {
+    margin: 8px;
+}
+
+
 
 .monitor
 {
