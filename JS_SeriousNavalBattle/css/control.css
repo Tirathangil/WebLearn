@@ -26,12 +26,10 @@ td {
 .gauge {
     background-color: black;
     border: inset gray 2px;
-    height: 32px;
+    height: 33px;
 }
 
 .digits-indicator {
-    padding: 0;
-    margin: 0;
     margin: 2px;
 }
 
