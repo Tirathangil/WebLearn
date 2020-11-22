@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'DSEG7';
-    src: url(../fonts/DSEG/DSEG7ClassicMini-Bold.woff) format("woff");
+    src: url(../fonts/DSEG7/DSEG7ClassicMini-Regular.woff) format("woff");
 }
 
 @font-face {
@@ -21,52 +21,90 @@ td {
     height: 32px;
 }
 
-/* Digits indicator style */
-
-.gauge {
-    background-color: black;
-    border: inset gray 2px;
-    height: 33px;
+/* FONTS definitions */
+.dseg14 {
+    font-family: DSEG14;
 }
 
-.digits-indicator {
-    margin: 2px;
-}
-
-
-.twodigitsgauge {
-    position: relative;
-    text-align: right;
-    color: #003E00;
+.dseg7 {
     font-family: DSEG7;
-    font-size: 24px;
-    z-index: 0;
 }
 
-.twodigitscounter {
-    position: relative;
-    text-align: right;
-    color: #68EA68;
-    top: -26px;
-    font-family: DSEG7;
-    font-size: 24px;
-    z-index: 1;
-}
-/* End Digits Indicator style */
+/* Align classes */
 
-.fcs {
+.place-row {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
 }
 
-.control-panel {
+.place-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.align-vcenter {
     display: flex;
     align-items: center;
-    flex-direction: column;
+}
+
+.align-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.zero-h-margin {
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+/* Control panel classes */
+
+.control-panel {
     background-image: url(../img/panel-bg.png);
     border: #989898 outset 3px;
     border-radius: 12px;
     margin-left: 16px;
+}
+
+/* gauge - completed set of indicators */
+
+.gauge {
+    padding: 4px;
+    width: 100%;
+}
+
+/*NORMAL Digits Indicator style */
+
+.seg-indicator {
+    background-color: #000;
+    border: inset gray 2px;
+    height: 30px;
+    padding: 0 4px;
+    padding-top: 2px;
+}
+
+.seg-indicator-grid {
+    position: relative;
+    top: 0px;
+    font-size: 24px;
+    color: #003E00;
+    text-align: right;
+    z-index: 1;
+}
+.seg-indicator-value {
+    position: relative;
+    top: -31.5px;
+    font-size: 24px;
+    color: #68EA68;
+    text-align: right;
+    z-index: 2;
+}
+
+/*End NORMAL Digits Indicator style */
+
+.fcs {
+    display: flex;
+    justify-content: space-around;
 }
 
 .gauge-group {
@@ -107,9 +145,10 @@ td {
     padding: 10px;
 }
 
-.control-panel-grouplabel {
+.control-panel-group-label {
     padding: 2px 10px;
     margin-top: -28px;
+    margin-bottom: 10px;
     color: #DDDDDD;
     background-image: url(../img/panel-bg.png);
     border: #CCCCCC 3px solid;
@@ -121,8 +160,6 @@ td {
 .rivets {
     margin: 8px;
 }
-
-
 
 .monitor
 {
