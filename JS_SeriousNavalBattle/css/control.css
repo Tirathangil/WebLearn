@@ -9,8 +9,9 @@
 }
 
 @font-face {
-    font-family: 'Terminal Land';
-    src: url(../fonts/TerminalLand/terminallandmono-bold.woff) format("woff");
+    font-family: 'GOST';
+    src: url(../fonts/OpenGOST/opengosttypeattregular.woff) format("woff");
+    
 }
 
 body {
@@ -33,6 +34,10 @@ td {
 
 .dseg7 {
     font-family: DSEG7;
+}
+
+.gost-font {
+    font-family: GOST;
 }
 
 /* Align classes */
@@ -198,7 +203,6 @@ td {
 
 .battlegrid-xcoord {
     color: green;
-    font-family: Terminal Land;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
@@ -207,7 +211,6 @@ td {
 
 .battlegrid-ycoord {
     color: green;
-    font-family: Terminal Land;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
