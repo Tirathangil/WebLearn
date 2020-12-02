@@ -2,16 +2,23 @@
     font-family: 'DSEG7';
     src: url(../fonts/DSEG7/DSEG7ClassicMini-Regular.woff) format("woff");
 }
-
 @font-face {
     font-family: 'DSEG14';
     src: url(../fonts/DSEG14/DSEG14ClassicMini-Regular.woff) format("woff");
 }
-
 @font-face {
     font-family: 'GOST';
     src: url(../fonts/OpenGOST/opengosttypeattregular.woff) format("woff");
     
+}
+@font-face {
+    font-family: 'captureit';
+    src: url(../fonts/captureit/captureit.woff) format("woff");
+}
+
+@font-face {
+    font-family: 'texgyre';
+    src: url(../fonts/texgyre/texgyre.woff) format("woff");
 }
 
 body {
@@ -27,11 +34,9 @@ td {
 .dseg14 {
     font-family: DSEG14;
 }
-
 .dseg7 {
     font-family: DSEG7;
 }
-
 .gost-font {
     font-family: GOST;
 }
@@ -42,43 +47,65 @@ td {
     display: flex;
     flex-direction: row;
 }
-
 .place-column {
     display: flex;
     flex-direction: column;
 }
-
+.place-column-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+}
 .align-vcenter {
     display: flex;
     align-items: center;
 }
-
 .align-hcenter {
     display: flex;
     justify-content: center;
 }
-
 .align-top {
     display: flex;
     align-items: flex-start;
 }
-
 .align-right {
     display: flex;
     justify-content: flex-end;
 }
-
 .zero-h-margin {
     margin-right: -8px;
     margin-left: -8px;
 }
-
 .display-none {
     display: none;
 }
+.test-item {
+    flex-grow: 0;
+}
 
-/* Place ships panel classes */
-
+/*Main panels Classes */
+.main-content {
+margin: 24px;
+}
+.fcs {
+    padding: 24px;
+    border: 5px outset white;
+    border-radius: 12px;
+    background-image: url(../img/panel-bg.png);
+    align-content: center;
+    z-index: 2;
+}
+.monitor {
+    min-width: 400px;
+    min-height: 400px;
+    
+    border-color: #989898;
+    border-width: 16px;
+    border-radius: 20px;
+    border-style: ridge groove groove ridge;
+    padding: 10px;
+    background-image: url(../img/screennoise.png);
+    z-index: 2;
+}
 .placeships-panel {
     background-image: url(../img/panel-bg.png);
     border: #989898 outset 3px;
@@ -88,18 +115,36 @@ td {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 32px;
-    margin-top: -10px;
+    margin-top: -24px;
     z-index: 1;
 }
-
-/* Control panel classes */
-
 .control-panel {
-    background-image: url(../img/panel-bg.png);
-    border: #989898 outset 3px;
+    /* background-image: url(../img/panel-bg.png);*/
+    background-color: #3D3D3D;
+    border: #989898 inset 3px;
     border-radius: 12px;
     margin-left: 16px;
     align-self: flex-start;
+}
+.log-printer {
+    width: 300px;
+    height: 400px;
+    border: 3px #989898 inset;
+    border-radius: 12px;
+    margin-right: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 2px 6px;
+    background-image: url(../img/log-paper.png);
+    background-position: 0px 22px;
+    background-attachment: local;
+    overflow-y: scroll;
+}
+
+.log-printer-record {
+    font-family: texgyre;
+    font-size: 18px;
+    line-height: 20px;
 }
 
 /* gauge - completed set of indicators */
@@ -107,6 +152,44 @@ td {
 .gauge {
     padding: 4px;
     width: 100%;
+}
+.gaugesign {
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    border: outset 1px grey;
+    background-image: url(../img/panel-bg.png);
+    color: white;
+    font-family: monospace;
+    font-weight: 800;
+    font-size: 16px; 
+}
+.gaugelabel {
+    padding: 2px 10px;
+    color: #DDDDDD;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+/* Gauges groups */
+.control-panel-group {
+    align-items: center;
+    border: #CCCCCC solid 4px;
+    margin: 10px;
+    margin-top: 20px;
+    padding: 10px;
+}
+.control-panel-group-label {
+    padding: 2px 10px;
+    margin-top: -28px;
+    margin-bottom: 10px;
+    color: #DDDDDD;
+    background-color: #3D3D3D;
+    border: #CCCCCC 3px solid;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: monospace;
 }
 
 /*NORMAL Digits Indicator style */
@@ -118,7 +201,6 @@ td {
     padding: 0 4px;
     padding-top: 2px;
 }
-
 .seg-indicator-grid {
     position: relative;
     top: 0px;
@@ -137,6 +219,7 @@ td {
 }
 
 /*End NORMAL Digits Indicator style */
+
 
 /* Key button style */
 
@@ -182,74 +265,8 @@ td {
     margin-left: 16px;
 }
 
-.fcs {
-
-}
-
-.gauge-group {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    width: 100%;
-}
-
-.gaugesign {
-    display: flex;
-    align-items: center;
-    border-radius: 8px;
-    border: outset 1px grey;
-    background-image: url(../img/panel-bg.png);
-    color: white;
-    font-family: monospace;
-    font-weight: 800;
-    font-size: 16px; 
-}
-
-.gaugelabel {
-    padding: 2px 10px;
-    color: #DDDDDD;
-    font-size: 18px;
-    font-weight: bold;
-    font-family: monospace;
-}
-
-.control-panel-group {
-    align-items: center;
-    border: #CCCCCC solid 4px;
-    margin: 10px;
-    margin-top: 20px;
-    padding: 10px;
-}
-
-.control-panel-group-label {
-    padding: 2px 10px;
-    margin-top: -28px;
-    margin-bottom: 10px;
-    color: #DDDDDD;
-    background-image: url(../img/panel-bg.png);
-    border: #CCCCCC 3px solid;
-    font-size: 18px;
-    font-weight: bold;
-    font-family: monospace;
-}
-
 .rivets {
     margin: 8px;
-}
-
-.monitor
-{
-    min-width: 400px;
-    min-height: 400px;
-    
-    border-color: #989898;
-    border-width: 16px;
-    border-radius: 20px;
-    border-style: ridge groove groove ridge;
-    padding: 10px;
-    background-image: url(../img/screennoise.png);
-    z-index: 2;
 }
 
 /* Start Menu Classes */
@@ -259,13 +276,11 @@ td {
     padding: 20px;
     color: green;
 }
-
 .start-menu-item {
     margin-bottom: 10px;
     font-size: 42px;
     width: 100%;
 }
-
 .start-menu-item:hover {
     color: black;
     background-color: green;
@@ -277,7 +292,6 @@ td {
     border: solid 3px green;
     border-spacing: 0px;
 }
-
 .battlegrid-cell {
     color: green;
     
@@ -285,14 +299,12 @@ td {
     margin: 0px;
     transition-duration: 0.5s;
 }
-
 .battlegrid-cell:hover {
     border: solid 1px;
     border-color: green;
     background-color: green;
     color: black;
 }
-
 .battlegrid-xcoord {
     color: green;
     font-size: 20px;
@@ -300,7 +312,6 @@ td {
     text-align: center;
     vertical-align: middle;
 }
-
 .battlegrid-ycoord {
     color: green;
     font-size: 20px;
@@ -308,3 +319,7 @@ td {
     text-align: center;
     vertical-align: middle;
 }
+
+/* Main Content */
+
+

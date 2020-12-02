@@ -10,8 +10,11 @@ var ControlPanel = {
         y: document.getElementById("ycoord"),
         SetSector: function () {
             var SelectedSector = event.currentTarget.id;
+            var LogPrinter = document.getElementById("logprinter");
             ControlPanel.Coords.y.innerHTML = SelectedSector[0];
             ControlPanel.Coords.x.innerHTML = SelectedSector[1];
+            LogPrinter.innerHTML = "<div class=\"log-printer-record type-font\">Выбран сектор " + event.currentTarget.id + "</div>" + LogPrinter.innerHTML;
+            
         },
     },
     Timer: {

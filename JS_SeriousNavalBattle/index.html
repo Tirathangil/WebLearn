@@ -11,374 +11,308 @@
 
 <body onload="Init()">
     <div class="main-content place-column align-hcenter">
-        <div class="fcs align-hcenter">
-            <div class="place-column align-hcenter">
-                <div class="monitor align-vcenter align-hcenter">
-                    <div class="start-menu gost-font" id="startmenu">
-                        <div class="start-menu-item align-hcenter" id="newgame" onclick="ControlPanel.StartGame()">Начать игру</div>
-                        <div class="start-menu-item align-hcenter" id="about">Об игре</div>
-                    </div>
-                    <table class="battlegrid display-none" id="enemygrid">
-                        <tr>
-                            <td>
-
-                            </td>
-                            <td class="battlegrid-ycoord gost-font">
-                                1
-                            </td>
-                            <td class="battlegrid-ycoord gost-font">
-                                2
-                            </td>
-                            <td class="battlegrid-ycoord gost-font">
-                                3
-                            </td>
-                            <td class="battlegrid-ycoord gost-font">
-                                4
-                            </td>
-                            <td class="battlegrid-ycoord gost-font">
-                                5
-                            </td>
-                            <td class="battlegrid-ycoord gost-font">
-                                6
-                            </td>
-                            <td class="battlegrid-ycoord gost-font">
-                                7
-                            </td>
-                            <td class="battlegrid-ycoord gost-font">
-                                8
-                            </td>
-                            <td class="battlegrid-ycoord gost-font">
-                                9
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="battlegrid-xcoord gost-font">
-                                A
-                            </td>
-                            <td class="battlegrid-cell" id="A1">
-                            </td>
-                            <td class="battlegrid-cell" id="A2">
-                            </td>
-                            <td class="battlegrid-cell" id="A3">
-                            </td>
-                            <td class="battlegrid-cell" id="A4">
-                            </td>
-                            <td class="battlegrid-cell" id="A5">
-                            </td>
-                            <td class="battlegrid-cell" id="A6">
-                            </td>
-                            <td class="battlegrid-cell" id="A7">
-                            </td>
-                            <td class="battlegrid-cell" id="A8">
-                            </td>
-                            <td class="battlegrid-cell" id="A9">
-                            </td>
-                            <td class="battlegrid-xcoord">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="battlegrid-xcoord gost-font">
-                                B
-                            </td>
-                            <td class="battlegrid-cell" id="B1">
-                            </td>
-                            <td class="battlegrid-cell" id="B2">
-                            </td>
-                            <td class="battlegrid-cell" id="B3">
-                            </td>
-                            <td class="battlegrid-cell" id="B4">
-                            </td>
-                            <td class="battlegrid-cell" id="B5">
-                            </td>
-                            <td class="battlegrid-cell" id="B6">
-                            </td>
-                            <td class="battlegrid-cell" id="B7">
-                            </td>
-                            <td class="battlegrid-cell" id="B8">
-                            </td>
-                            <td class="battlegrid-cell" id="B9">
-                            </td>
-                            <td class="battlegrid-xcoord">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="battlegrid-xcoord gost-font">
-                                C
-                            </td>
-                            <td class="battlegrid-cell" id="C1">
-                            </td>
-                            <td class="battlegrid-cell" id="C2">
-                            </td>
-                            <td class="battlegrid-cell" id="C3">
-                            </td>
-                            <td class="battlegrid-cell" id="C4">
-                            </td>
-                            <td class="battlegrid-cell" id="C5">
-                            </td>
-                            <td class="battlegrid-cell" id="C6">
-                            </td>
-                            <td class="battlegrid-cell" id="C7">
-                            </td>
-                            <td class="battlegrid-cell" id="C8">
-                            </td>
-                            <td class="battlegrid-cell" id="C9">
-                            </td>
-                            <td class="battlegrid-xcoord">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="battlegrid-xcoord gost-font">
-                                D
-                            </td>
-                            <td class="battlegrid-cell" id="D1">
-                            </td>
-                            <td class="battlegrid-cell" id="D2">
-                            </td>
-                            <td class="battlegrid-cell" id="D3">
-                            </td>
-                            <td class="battlegrid-cell" id="D4">
-                            </td>
-                            <td class="battlegrid-cell" id="D5">
-                            </td>
-                            <td class="battlegrid-cell" id="D6">
-                            </td>
-                            <td class="battlegrid-cell" id="D7">
-                            </td>
-                            <td class="battlegrid-cell" id="D8">
-                            </td>
-                            <td class="battlegrid-cell" id="D9">
-                            </td>
-                            <td class="battlegrid-xcoord">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="battlegrid-xcoord gost-font">
-                                E
-                            </td>
-                            <td class="battlegrid-cell" id="E1">
-                            </td>
-                            <td class="battlegrid-cell" id="E2">
-                            </td>
-                            <td class="battlegrid-cell" id="E3">
-                            </td>
-                            <td class="battlegrid-cell" id="E4">
-                            </td>
-                            <td class="battlegrid-cell" id="E5">
-                            </td>
-                            <td class="battlegrid-cell" id="E6">
-                            </td>
-                            <td class="battlegrid-cell" id="E7">
-                            </td>
-                            <td class="battlegrid-cell" id="E8">
-                            </td>
-                            <td class="battlegrid-cell" id="E9">
-                            </td>
-                            <td class="battlegrid-xcoord">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="battlegrid-xcoord gost-font">
-                                F
-                            </td>
-                            <td class="battlegrid-cell" id="F1">
-                            </td>
-                            <td class="battlegrid-cell" id="F2">
-                            </td>
-                            <td class="battlegrid-cell" id="F3">
-                            </td>
-                            <td class="battlegrid-cell" id="F4">
-                            </td>
-                            <td class="battlegrid-cell" id="F5">
-                            </td>
-                            <td class="battlegrid-cell" id="F6">
-                            </td>
-                            <td class="battlegrid-cell" id="F7">
-                            </td>
-                            <td class="battlegrid-cell" id="F8">
-                            </td>
-                            <td class="battlegrid-cell" id="F9">
-                            </td>
-                            <td class="battlegrid-xcoord">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="battlegrid-xcoord gost-font">
-                                G
-                            </td>
-                            <td class="battlegrid-cell" id="G1">
-                            </td>
-                            <td class="battlegrid-cell" id="G2">
-                            </td>
-                            <td class="battlegrid-cell" id="G3">
-                            </td>
-                            <td class="battlegrid-cell" id="G4">
-                            </td>
-                            <td class="battlegrid-cell" id="G5">
-                            </td>
-                            <td class="battlegrid-cell" id="G6">
-                            </td>
-                            <td class="battlegrid-cell" id="G7">
-                            </td>
-                            <td class="battlegrid-cell" id="G8">
-                            </td>
-                            <td class="battlegrid-cell" id="G9">
-                            </td>
-                            <td class="battlegrid-xcoord">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="battlegrid-xcoord gost-font">
-                                H
-                            </td>
-                            <td class="battlegrid-cell" id="H1">
-                            </td>
-                            <td class="battlegrid-cell" id="H2">
-                            </td>
-                            <td class="battlegrid-cell" id="H3">
-                            </td>
-                            <td class="battlegrid-cell" id="H4">
-                            </td>
-                            <td class="battlegrid-cell" id="H5">
-                            </td>
-                            <td class="battlegrid-cell" id="H6">
-                            </td>
-                            <td class="battlegrid-cell" id="H7">
-                            </td>
-                            <td class="battlegrid-cell" id="H8">
-                            </td>
-                            <td class="battlegrid-cell" id="H9">
-                            </td>
-                            <td class="battlegrid-xcoord">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="battlegrid-xcoord gost-font">
-                                I
-                            </td>
-                            <td class="battlegrid-cell" id="I1">
-                            </td>
-                            <td class="battlegrid-cell" id="I2">
-                            </td>
-                            <td class="battlegrid-cell" id="I3">
-                            </td>
-                            <td class="battlegrid-cell" id="I4">
-                            </td>
-                            <td class="battlegrid-cell" id="I5">
-                            </td>
-                            <td class="battlegrid-cell" id="I6">
-                            </td>
-                            <td class="battlegrid-cell" id="I7">
-                            </td>
-                            <td class="battlegrid-cell" id="I8">
-                            </td>
-                            <td class="battlegrid-cell" id="I9">
-                            </td>
-                            <td class="battlegrid-xcoord">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="battlegrid-ycoord">
-
-                            </td>
-                            <td class="battlegrid-ycoord">
-
-                            </td>
-                            <td class="battlegrid-ycoord">
-
-                            </td>
-                            <td class="battlegrid-ycoord">
-
-                            </td>
-                            <td class="battlegrid-ycoord">
-
-                            </td>
-                            <td class="battlegrid-ycoord">
-
-                            </td>
-                            <td class="battlegrid-ycoord">
-
-                            </td>
-                            <td class="battlegrid-ycoord">
-
-                            </td>
-                            <td class="battlegrid-ycoord">
-
-                            </td>
-                            <td class="battlegrid-ycoord">
-
-                            </td>
-                        </tr>
-                    </table>
+        <div class="fcs place-row align-hcenter">
+            <div class="log-printer place-column-reverse" id="logprinter">
+                <div class="log-printer-record type-font">
+                    Корабль противника уничтожен в секторе B2
                 </div>
-                <div class="placeships-panel" id="toppanel">
-                    <div class="control-panel-group place-column">
-                        <div class="control-panel-group-label">
-                            РАЗМЕЩЕНИЕ КОРАБЛЕЙ
-                        </div>
-                        <div class="place-row align-vcenter">
-                            <div class="place-column">
-                                <div class="gauge place-row align-vcenter align-right">
-                                    <button class="button-key ships-key gost-font">
-                                        Эсминцы
-                                    </button>
-                                    <div class="seg-indicator">
-                                        <div class="seg-indicator-grid">
-                                            <span class="dseg7">8</span>
-                                        </div>
-                                        <div class="seg-indicator-value">
-                                            <span class="dseg7" id="destroyers">-</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="gauge place-row align-vcenter align-right">
-                                    <button class="button-key ships-key gost-font">
-                                        Фрегаты
-                                    </button>
-                                    <div class="seg-indicator">
-                                        <div class="seg-indicator-grid">
-                                            <span class="dseg7">8</span>
-                                        </div>
-                                        <div class="seg-indicator-value">
-                                            <span class="dseg7" id="fregats">-</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="place-column">
-                                <div class="gauge place-row align-vcenter align-right">
-                                    <button class="button-key ships-key gost-font">
-                                        Крейсеры
-                                    </button>
-                                    <div class="seg-indicator">
-                                        <div class="seg-indicator-grid">
-                                            <span class="dseg7">8</span>
-                                        </div>
-                                        <div class="seg-indicator-value">
-                                            <span class="dseg7" id="cruisers">-</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="gauge place-row align-vcenter align-right">
-                                    <button class="button-key ships-key gost-font">
-                                        Линкоры
-                                    </button>
-                                    <div class="seg-indicator">
-                                        <div class="seg-indicator-grid">
-                                            <span class="dseg7">8</span>
-                                        </div>
-                                        <div class="seg-indicator-value">
-                                            <span class="dseg7" id="destroyers">-</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="place-column place-keys-container">
-                                <button class="button-key place-key gost-font">Готово</button>
-                                <button class="button-key place-key gost-font">Сброс</button>
-                            </div>
-                        </div>
-                    </div>
+            </div>
+            <div class="monitor align-vcenter align-hcenter">
+                <div class="start-menu gost-font" id="startmenu">
+                    <div class="start-menu-item align-hcenter" id="newgame" onclick="ControlPanel.StartGame()">Начать игру</div>
+                    <div class="start-menu-item align-hcenter" id="about">Об игре</div>
                 </div>
+                <table class="battlegrid display-none" id="enemygrid">
+                    <tr>
+                        <td>
+
+                        </td>
+                        <td class="battlegrid-ycoord gost-font">
+                            1
+                        </td>
+                        <td class="battlegrid-ycoord gost-font">
+                            2
+                        </td>
+                        <td class="battlegrid-ycoord gost-font">
+                            3
+                        </td>
+                        <td class="battlegrid-ycoord gost-font">
+                            4
+                        </td>
+                        <td class="battlegrid-ycoord gost-font">
+                            5
+                        </td>
+                        <td class="battlegrid-ycoord gost-font">
+                            6
+                        </td>
+                        <td class="battlegrid-ycoord gost-font">
+                            7
+                        </td>
+                        <td class="battlegrid-ycoord gost-font">
+                            8
+                        </td>
+                        <td class="battlegrid-ycoord gost-font">
+                            9
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="battlegrid-xcoord gost-font">
+                            A
+                        </td>
+                        <td class="battlegrid-cell" id="A1">
+                        </td>
+                        <td class="battlegrid-cell" id="A2">
+                        </td>
+                        <td class="battlegrid-cell" id="A3">
+                        </td>
+                        <td class="battlegrid-cell" id="A4">
+                        </td>
+                        <td class="battlegrid-cell" id="A5">
+                        </td>
+                        <td class="battlegrid-cell" id="A6">
+                        </td>
+                        <td class="battlegrid-cell" id="A7">
+                        </td>
+                        <td class="battlegrid-cell" id="A8">
+                        </td>
+                        <td class="battlegrid-cell" id="A9">
+                        </td>
+                        <td class="battlegrid-xcoord">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="battlegrid-xcoord gost-font">
+                            B
+                        </td>
+                        <td class="battlegrid-cell" id="B1">
+                        </td>
+                        <td class="battlegrid-cell" id="B2">
+                        </td>
+                        <td class="battlegrid-cell" id="B3">
+                        </td>
+                        <td class="battlegrid-cell" id="B4">
+                        </td>
+                        <td class="battlegrid-cell" id="B5">
+                        </td>
+                        <td class="battlegrid-cell" id="B6">
+                        </td>
+                        <td class="battlegrid-cell" id="B7">
+                        </td>
+                        <td class="battlegrid-cell" id="B8">
+                        </td>
+                        <td class="battlegrid-cell" id="B9">
+                        </td>
+                        <td class="battlegrid-xcoord">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="battlegrid-xcoord gost-font">
+                            C
+                        </td>
+                        <td class="battlegrid-cell" id="C1">
+                        </td>
+                        <td class="battlegrid-cell" id="C2">
+                        </td>
+                        <td class="battlegrid-cell" id="C3">
+                        </td>
+                        <td class="battlegrid-cell" id="C4">
+                        </td>
+                        <td class="battlegrid-cell" id="C5">
+                        </td>
+                        <td class="battlegrid-cell" id="C6">
+                        </td>
+                        <td class="battlegrid-cell" id="C7">
+                        </td>
+                        <td class="battlegrid-cell" id="C8">
+                        </td>
+                        <td class="battlegrid-cell" id="C9">
+                        </td>
+                        <td class="battlegrid-xcoord">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="battlegrid-xcoord gost-font">
+                            D
+                        </td>
+                        <td class="battlegrid-cell" id="D1">
+                        </td>
+                        <td class="battlegrid-cell" id="D2">
+                        </td>
+                        <td class="battlegrid-cell" id="D3">
+                        </td>
+                        <td class="battlegrid-cell" id="D4">
+                        </td>
+                        <td class="battlegrid-cell" id="D5">
+                        </td>
+                        <td class="battlegrid-cell" id="D6">
+                        </td>
+                        <td class="battlegrid-cell" id="D7">
+                        </td>
+                        <td class="battlegrid-cell" id="D8">
+                        </td>
+                        <td class="battlegrid-cell" id="D9">
+                        </td>
+                        <td class="battlegrid-xcoord">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="battlegrid-xcoord gost-font">
+                            E
+                        </td>
+                        <td class="battlegrid-cell" id="E1">
+                        </td>
+                        <td class="battlegrid-cell" id="E2">
+                        </td>
+                        <td class="battlegrid-cell" id="E3">
+                        </td>
+                        <td class="battlegrid-cell" id="E4">
+                        </td>
+                        <td class="battlegrid-cell" id="E5">
+                        </td>
+                        <td class="battlegrid-cell" id="E6">
+                        </td>
+                        <td class="battlegrid-cell" id="E7">
+                        </td>
+                        <td class="battlegrid-cell" id="E8">
+                        </td>
+                        <td class="battlegrid-cell" id="E9">
+                        </td>
+                        <td class="battlegrid-xcoord">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="battlegrid-xcoord gost-font">
+                            F
+                        </td>
+                        <td class="battlegrid-cell" id="F1">
+                        </td>
+                        <td class="battlegrid-cell" id="F2">
+                        </td>
+                        <td class="battlegrid-cell" id="F3">
+                        </td>
+                        <td class="battlegrid-cell" id="F4">
+                        </td>
+                        <td class="battlegrid-cell" id="F5">
+                        </td>
+                        <td class="battlegrid-cell" id="F6">
+                        </td>
+                        <td class="battlegrid-cell" id="F7">
+                        </td>
+                        <td class="battlegrid-cell" id="F8">
+                        </td>
+                        <td class="battlegrid-cell" id="F9">
+                        </td>
+                        <td class="battlegrid-xcoord">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="battlegrid-xcoord gost-font">
+                            G
+                        </td>
+                        <td class="battlegrid-cell" id="G1">
+                        </td>
+                        <td class="battlegrid-cell" id="G2">
+                        </td>
+                        <td class="battlegrid-cell" id="G3">
+                        </td>
+                        <td class="battlegrid-cell" id="G4">
+                        </td>
+                        <td class="battlegrid-cell" id="G5">
+                        </td>
+                        <td class="battlegrid-cell" id="G6">
+                        </td>
+                        <td class="battlegrid-cell" id="G7">
+                        </td>
+                        <td class="battlegrid-cell" id="G8">
+                        </td>
+                        <td class="battlegrid-cell" id="G9">
+                        </td>
+                        <td class="battlegrid-xcoord">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="battlegrid-xcoord gost-font">
+                            H
+                        </td>
+                        <td class="battlegrid-cell" id="H1">
+                        </td>
+                        <td class="battlegrid-cell" id="H2">
+                        </td>
+                        <td class="battlegrid-cell" id="H3">
+                        </td>
+                        <td class="battlegrid-cell" id="H4">
+                        </td>
+                        <td class="battlegrid-cell" id="H5">
+                        </td>
+                        <td class="battlegrid-cell" id="H6">
+                        </td>
+                        <td class="battlegrid-cell" id="H7">
+                        </td>
+                        <td class="battlegrid-cell" id="H8">
+                        </td>
+                        <td class="battlegrid-cell" id="H9">
+                        </td>
+                        <td class="battlegrid-xcoord">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="battlegrid-xcoord gost-font">
+                            I
+                        </td>
+                        <td class="battlegrid-cell" id="I1">
+                        </td>
+                        <td class="battlegrid-cell" id="I2">
+                        </td>
+                        <td class="battlegrid-cell" id="I3">
+                        </td>
+                        <td class="battlegrid-cell" id="I4">
+                        </td>
+                        <td class="battlegrid-cell" id="I5">
+                        </td>
+                        <td class="battlegrid-cell" id="I6">
+                        </td>
+                        <td class="battlegrid-cell" id="I7">
+                        </td>
+                        <td class="battlegrid-cell" id="I8">
+                        </td>
+                        <td class="battlegrid-cell" id="I9">
+                        </td>
+                        <td class="battlegrid-xcoord">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="battlegrid-ycoord">
+
+                        </td>
+                        <td class="battlegrid-ycoord">
+
+                        </td>
+                        <td class="battlegrid-ycoord">
+
+                        </td>
+                        <td class="battlegrid-ycoord">
+
+                        </td>
+                        <td class="battlegrid-ycoord">
+
+                        </td>
+                        <td class="battlegrid-ycoord">
+
+                        </td>
+                        <td class="battlegrid-ycoord">
+
+                        </td>
+                        <td class="battlegrid-ycoord">
+
+                        </td>
+                        <td class="battlegrid-ycoord">
+
+                        </td>
+                        <td class="battlegrid-ycoord">
+
+                        </td>
+                    </tr>
+                </table>
             </div>
             <div class="control-panel place-column align-center">
                 <div class="control-panel-group place-column align-right">
@@ -443,7 +377,7 @@
                     <div class="control-panel-group-label">
                         УПРАВЛЕНИЕ ОГНЁМ
                     </div>
-                    <div class="gauge-group">
+                    <div class="gauge place-row align-right align-vcenter">
                         <div class="gaugelabel">
                             Квадрат:
                         </div>
@@ -465,7 +399,75 @@
                 </div>
             </div>
         </div>
-
+        <div class="placeships-panel" id="toppanel">
+            <div class="control-panel-group place-column">
+                <div class="control-panel-group-label">
+                    РАЗМЕЩЕНИЕ КОРАБЛЕЙ
+                </div>
+                <div class="place-row align-vcenter">
+                    <div class="place-column">
+                        <div class="gauge place-row align-vcenter align-right">
+                            <button class="button-key ships-key gost-font">
+                                Эсминцы
+                            </button>
+                            <div class="seg-indicator">
+                                <div class="seg-indicator-grid">
+                                    <span class="dseg7">8</span>
+                                </div>
+                                <div class="seg-indicator-value">
+                                    <span class="dseg7" id="destroyers">-</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gauge place-row align-vcenter align-right">
+                            <button class="button-key ships-key gost-font">
+                                Фрегаты
+                            </button>
+                            <div class="seg-indicator">
+                                <div class="seg-indicator-grid">
+                                    <span class="dseg7">8</span>
+                                </div>
+                                <div class="seg-indicator-value">
+                                    <span class="dseg7" id="fregats">-</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="place-column">
+                        <div class="gauge place-row align-vcenter align-right">
+                            <button class="button-key ships-key gost-font">
+                                Крейсеры
+                            </button>
+                            <div class="seg-indicator">
+                                <div class="seg-indicator-grid">
+                                    <span class="dseg7">8</span>
+                                </div>
+                                <div class="seg-indicator-value">
+                                    <span class="dseg7" id="cruisers">-</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gauge place-row align-vcenter align-right">
+                            <button class="button-key ships-key gost-font">
+                                Линкоры
+                            </button>
+                            <div class="seg-indicator">
+                                <div class="seg-indicator-grid">
+                                    <span class="dseg7">8</span>
+                                </div>
+                                <div class="seg-indicator-value">
+                                    <span class="dseg7" id="destroyers">-</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="place-column place-keys-container">
+                        <button class="button-key place-key gost-font">Готово</button>
+                        <button class="button-key place-key gost-font">Сброс</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>
