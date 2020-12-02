@@ -16,10 +16,6 @@
 
 body {
     background-image: url(../img/bg.png);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 64px;
 }
 
 td {
@@ -40,7 +36,7 @@ td {
     font-family: GOST;
 }
 
-/* Align classes */
+/* Utility classes */
 
 .place-row {
     display: flex;
@@ -57,6 +53,16 @@ td {
     align-items: center;
 }
 
+.align-hcenter {
+    display: flex;
+    justify-content: center;
+}
+
+.align-top {
+    display: flex;
+    align-items: flex-start;
+}
+
 .align-right {
     display: flex;
     justify-content: flex-end;
@@ -67,6 +73,25 @@ td {
     margin-left: -8px;
 }
 
+.display-none {
+    display: none;
+}
+
+/* Place ships panel classes */
+
+.placeships-panel {
+    background-image: url(../img/panel-bg.png);
+    border: #989898 outset 3px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+    margin-top: -10px;
+    z-index: 1;
+}
+
 /* Control panel classes */
 
 .control-panel {
@@ -74,6 +99,7 @@ td {
     border: #989898 outset 3px;
     border-radius: 12px;
     margin-left: 16px;
+    align-self: flex-start;
 }
 
 /* gauge - completed set of indicators */
@@ -112,9 +138,52 @@ td {
 
 /*End NORMAL Digits Indicator style */
 
+/* Key button style */
+
+.button-key {
+    background-image: url(../img/button-bg.png);
+    border-color: #808080;
+    border-radius: 5px;
+    border-width: 3px;
+    border-style: outset;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #C5C5C5;
+    outline: none;
+    margin: 5px;
+}
+
+.button-key:active {
+    border-style: groove;
+}
+
+.ships-key {
+    height: 32px;
+    width: 128px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.ships-key:active {
+    font-size: 19.5px;
+}
+
+.place-key {
+    height: 48px;
+    width: 128px;
+    font-size: 32px;
+}
+
+.place-key:active {
+    font-size: 31.5px;
+}
+
+.place-keys-container {
+    margin-left: 16px;
+}
+
 .fcs {
-    display: flex;
-    justify-content: space-around;
+
 }
 
 .gauge-group {
@@ -146,8 +215,6 @@ td {
 }
 
 .control-panel-group {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     border: #CCCCCC solid 4px;
     margin: 10px;
@@ -173,14 +240,39 @@ td {
 
 .monitor
 {
+    min-width: 400px;
+    min-height: 400px;
+    
     border-color: #989898;
     border-width: 16px;
     border-radius: 20px;
     border-style: ridge groove groove ridge;
     padding: 10px;
     background-image: url(../img/screennoise.png);
+    z-index: 2;
 }
 
+/* Start Menu Classes */
+.start-menu {
+    margin-bottom: auto;
+    width: 100%;
+    padding: 20px;
+    color: green;
+}
+
+.start-menu-item {
+    margin-bottom: 10px;
+    font-size: 42px;
+    width: 100%;
+}
+
+.start-menu-item:hover {
+    color: black;
+    background-color: green;
+    font-size: 42px;
+}
+
+/* Game grid classes */
 .battlegrid {
     border: solid 3px green;
     border-spacing: 0px;
