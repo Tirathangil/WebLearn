@@ -12,20 +12,23 @@
 <body onload="Init()">
     <header class="page-header">
         <div class="gost-font">
-        Морской бой
+            Морской бой
         </div>
-    
+
     </header>
-    
+
     <div class="main-content">
         <div class="fcs place-row">
             <div class="log-printer place-column-reverse" id="logprinter">
                 <div class="log-printer-record type-font">
-                    Корабль противника уничтожен в секторе B2
+                    Test English font GNU Typewriter
+                </div>
+                <div class="log-printer-record type-font">
+                    Тест русского шрифта GNU Typewriter
                 </div>
             </div>
             <div class="monitor align-vcenter align-hcenter">
-                <div class="start-menu gost-font" id="startmenu">
+                <div class="start-menu dited-font" id="startmenu">
                     <div class="start-menu-item align-hcenter" id="newgame" onclick="ControlPanel.StartGame()">Начать игру</div>
                     <div class="start-menu-item align-hcenter" id="about">Об игре</div>
                 </div>
@@ -34,36 +37,36 @@
                         <td>
 
                         </td>
-                        <td class="battlegrid-ycoord gost-font">
+                        <td class="battlegrid-ycoord dited-font">
                             1
                         </td>
-                        <td class="battlegrid-ycoord gost-font">
+                        <td class="battlegrid-ycoord dited-font">
                             2
                         </td>
-                        <td class="battlegrid-ycoord gost-font">
+                        <td class="battlegrid-ycoord dited-font">
                             3
                         </td>
-                        <td class="battlegrid-ycoord gost-font">
+                        <td class="battlegrid-ycoord dited-font">
                             4
                         </td>
-                        <td class="battlegrid-ycoord gost-font">
+                        <td class="battlegrid-ycoord dited-font">
                             5
                         </td>
-                        <td class="battlegrid-ycoord gost-font">
+                        <td class="battlegrid-ycoord dited-font">
                             6
                         </td>
-                        <td class="battlegrid-ycoord gost-font">
+                        <td class="battlegrid-ycoord dited-font">
                             7
                         </td>
-                        <td class="battlegrid-ycoord gost-font">
+                        <td class="battlegrid-ycoord dited-font">
                             8
                         </td>
-                        <td class="battlegrid-ycoord gost-font">
+                        <td class="battlegrid-ycoord dited-font">
                             9
                         </td>
                     </tr>
                     <tr>
-                        <td class="battlegrid-xcoord gost-font">
+                        <td class="battlegrid-xcoord dited-font">
                             A
                         </td>
                         <td class="battlegrid-cell" id="A1">
@@ -88,7 +91,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="battlegrid-xcoord gost-font">
+                        <td class="battlegrid-xcoord dited-font">
                             B
                         </td>
                         <td class="battlegrid-cell" id="B1">
@@ -113,7 +116,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="battlegrid-xcoord gost-font">
+                        <td class="battlegrid-xcoord dited-font">
                             C
                         </td>
                         <td class="battlegrid-cell" id="C1">
@@ -138,7 +141,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="battlegrid-xcoord gost-font">
+                        <td class="battlegrid-xcoord dited-font">
                             D
                         </td>
                         <td class="battlegrid-cell" id="D1">
@@ -163,7 +166,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="battlegrid-xcoord gost-font">
+                        <td class="battlegrid-xcoord dited-font">
                             E
                         </td>
                         <td class="battlegrid-cell" id="E1">
@@ -188,7 +191,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="battlegrid-xcoord gost-font">
+                        <td class="battlegrid-xcoord dited-font">
                             F
                         </td>
                         <td class="battlegrid-cell" id="F1">
@@ -213,7 +216,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="battlegrid-xcoord gost-font">
+                        <td class="battlegrid-xcoord dited-font">
                             G
                         </td>
                         <td class="battlegrid-cell" id="G1">
@@ -238,7 +241,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="battlegrid-xcoord gost-font">
+                        <td class="battlegrid-xcoord dited-font">
                             H
                         </td>
                         <td class="battlegrid-cell" id="H1">
@@ -263,7 +266,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="battlegrid-xcoord gost-font">
+                        <td class="battlegrid-xcoord dited-font">
                             I
                         </td>
                         <td class="battlegrid-cell" id="I1">
@@ -321,100 +324,14 @@
                     </tr>
                 </table>
             </div>
-            <div class="control-panel place-column align-center">
-                <div class="control-panel-group place-column align-right">
+            <div class="control-panel place-column align-vcenter">
+                <div class="control-panel-group place-column display-none" id="placegroup">
                     <div class="control-panel-group-label">
-                        ХОД БОЯ
+                        РАЗМЕЩЕНИЕ КОРАБЛЕЙ
                     </div>
-                    <div class="gauge place-row align-right align-vcenter">
-                        <div class="gaugelabel">
-                            Время боя:
-                        </div>
-                        <div class="seg-indicator">
-                            <div class="seg-indicator-grid">
-                                <span class="dseg7">88:88</span>
-                            </div>
-                            <div class="seg-indicator-value">
-                                <span class="dseg7" id="timer">--:--</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gauge place-row align-right align-vcenter">
-                        <div class="gaugelabel">
-                            Выстрелов:
-                        </div>
-                        <div class="seg-indicator">
-                            <div class="seg-indicator-grid">
-                                <span class="dseg7">88</span>
-                            </div>
-                            <div class="seg-indicator-value">
-                                <span class="dseg7">--</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gauge place-row align-right align-vcenter">
-                        <div class="gaugelabel">
-                            Попаданий:
-                        </div>
-                        <div class="seg-indicator">
-                            <div class="seg-indicator-grid">
-                                <span class="dseg7">88</span>
-                            </div>
-                            <div class="seg-indicator-value">
-                                <span class="dseg7">--</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gauge place-row align-right align-vcenter">
-                        <div class="gaugelabel">
-                            Точность(&#37;):
-                        </div>
-                        <div class="seg-indicator">
-                            <div class="seg-indicator-grid">
-                                <span class="dseg7">888</span>
-                            </div>
-                            <div class="seg-indicator-value">
-                                <span class="dseg7" id="accuracy">---</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="control-panel-group place-column">
-                    <div class="control-panel-group-label">
-                        УПРАВЛЕНИЕ ОГНЁМ
-                    </div>
-                    <div class="gauge place-row align-right align-vcenter">
-                        <div class="gaugelabel">
-                            Квадрат:
-                        </div>
-                        <div class="seg-indicator">
-                            <div class="seg-indicator-grid">
-                                <span class="dseg14">~</span><span class="dseg7">8</span>
-                            </div>
-                            <div class="seg-indicator-value">
-                                <span class="dseg14" id="ycoord">-</span><span class="dseg7" id="xcoord">-</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gaugesign">
-                        <img src="img/rivet.png" class="rivets">
-                        <span>УПРАВЛЕНИЕ ОГНЕМ</span>
-                        <img src="img/rivet.png" class="rivets">
-                    </div>
-                    <button class="button-key gost-font" onclick="ControlPanel.LoadGame()" id="SelectShip">Скрыть сетку</button>
-                </div>
-            </div>
-        </div>
-        <div class="placeships-panel" id="toppanel">
-            <div class="control-panel-group place-column">
-                <div class="control-panel-group-label">
-                    РАЗМЕЩЕНИЕ КОРАБЛЕЙ
-                </div>
-                <div class="place-row align-vcenter">
-                    <div class="place-column">
+                    <div class="place-column align-vcenter align-right">
                         <div class="gauge place-row align-vcenter align-right">
-                            <button class="button-key ships-key gost-font">
+                            <button class="button-key ships-key jost-font">
                                 Эсминцы
                             </button>
                             <div class="seg-indicator">
@@ -427,7 +344,7 @@
                             </div>
                         </div>
                         <div class="gauge place-row align-vcenter align-right">
-                            <button class="button-key ships-key gost-font">
+                            <button class="button-key ships-key jost-font">
                                 Фрегаты
                             </button>
                             <div class="seg-indicator">
@@ -439,10 +356,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="place-column">
                         <div class="gauge place-row align-vcenter align-right">
-                            <button class="button-key ships-key gost-font">
+                            <button class="button-key ships-key jost-font">
                                 Крейсеры
                             </button>
                             <div class="seg-indicator">
@@ -455,7 +370,7 @@
                             </div>
                         </div>
                         <div class="gauge place-row align-vcenter align-right">
-                            <button class="button-key ships-key gost-font">
+                            <button class="button-key ships-key jost-font">
                                 Линкоры
                             </button>
                             <div class="seg-indicator">
@@ -467,18 +382,97 @@
                                 </div>
                             </div>
                         </div>
+                        <button class="button-key place-key jost-font">Повернуть</button>
+                        <button class="button-key place-key jost-font">Сброс</button>
+                        <button class="button-key place-key jost-font" onclick="ControlPanel.ShipsPlaced()">Готово</button>
                     </div>
-                    <div class="place-column place-keys-container">
-                        <button class="button-key place-key gost-font">Готово</button>
-                        <button class="button-key place-key gost-font">Сброс</button>
+                </div>
+                <div id="battlecontrol">
+                    <div class="control-panel-group place-column align-right">
+                        <div class="control-panel-group-label">
+                            ХОД БОЯ
+                        </div>
+                        <div class="gauge place-row align-right align-vcenter">
+                            <div class="gaugelabel">
+                                Время боя:
+                            </div>
+                            <div class="seg-indicator">
+                                <div class="seg-indicator-grid">
+                                    <span class="dseg7">88:88</span>
+                                </div>
+                                <div class="seg-indicator-value">
+                                    <span class="dseg7" id="timer">--:--</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gauge place-row align-right align-vcenter">
+                            <div class="gaugelabel">
+                                Выстрелов:
+                            </div>
+                            <div class="seg-indicator">
+                                <div class="seg-indicator-grid">
+                                    <span class="dseg7">88</span>
+                                </div>
+                                <div class="seg-indicator-value">
+                                    <span class="dseg7">--</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gauge place-row align-right align-vcenter">
+                            <div class="gaugelabel">
+                                Попаданий:
+                            </div>
+                            <div class="seg-indicator">
+                                <div class="seg-indicator-grid">
+                                    <span class="dseg7">88</span>
+                                </div>
+                                <div class="seg-indicator-value">
+                                    <span class="dseg7">--</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gauge place-row align-right align-vcenter">
+                            <div class="gaugelabel">
+                                Точность(&#37;):
+                            </div>
+                            <div class="seg-indicator">
+                                <div class="seg-indicator-grid">
+                                    <span class="dseg7">888</span>
+                                </div>
+                                <div class="seg-indicator-value">
+                                    <span class="dseg7" id="accuracy">---</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="control-panel-group place-column">
+                        <div class="control-panel-group-label">
+                            УПРАВЛЕНИЕ ОГНЁМ
+                        </div>
+                        <div class="gauge place-row align-right align-vcenter">
+                            <div class="gaugelabel">
+                                Квадрат:
+                            </div>
+                            <div class="seg-indicator">
+                                <div class="seg-indicator-grid">
+                                    <span class="dseg14">~</span><span class="dseg7">8</span>
+                                </div>
+                                <div class="seg-indicator-value">
+                                    <span class="dseg14" id="ycoord">-</span><span class="dseg7" id="xcoord">-</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gauge place-row align-right align-vcenter">
+                            <div class="gaugelabel">Сетка (свой/чужой): </div>
+                            <div class="gaugeswitch"></div>
+                        </div>
+                        <button class="button-key jost-font" onclick="ControlPanel.LoadGame()" id="SelectShip">Скрыть сетку</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
     <footer class="page-footer"></footer>
-
 </body>
 
 </html>

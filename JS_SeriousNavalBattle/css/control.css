@@ -7,18 +7,16 @@
     src: url(../fonts/DSEG14/DSEG14ClassicMini-Regular.woff) format("woff");
 }
 @font-face {
-    font-family: 'GOST';
-    src: url(../fonts/OpenGOST/opengosttypeattregular.woff) format("woff");
-    
+    font-family: 'b52';
+    src: url(../fonts/b52/B52.woff) format("woff");
 }
 @font-face {
-    font-family: 'captureit';
-    src: url(../fonts/captureit/captureit.woff) format("woff");
+    font-family: 'jost';
+    src: url(../fonts/jost/jost.woff) format("woff");
 }
-
 @font-face {
-    font-family: 'texgyre';
-    src: url(../fonts/texgyre/texgyre.woff) format("woff");
+    font-family: 'dited';
+    src: url(../fonts/Dited/dited.woff) format("woff");
 }
 
 body {
@@ -37,9 +35,13 @@ td {
 .dseg7 {
     font-family: DSEG7;
 }
-.gost-font {
-    font-family: GOST;
+.jost-font {
+    font-family: jost;
 }
+.dited-font {
+    font-family: dited;
+}
+
 
 /* Utility classes */
 
@@ -87,14 +89,12 @@ td {
 .main-content {
     display: flex;
     justify-content: center;
-    background-image: url(../img/bg-alt.jpg);
 }
 
 .page-header {
     border-bottom: 5px ridge white;
     border-top: 5px ridge white;
     margin-bottom: 12px;
-    height: 64px;
     color: white;
     background-image: url(../img/bg.png);
     font-size: 36px;
@@ -103,7 +103,7 @@ td {
 
 /*Main panels Classes */
 .fcs {
-    width: 1000px;
+    width: 1080px;
     padding: 24px;
     border: outset 5px white;
     border-radius: 12px;
@@ -142,6 +142,8 @@ td {
     border-radius: 12px;
     margin-left: 16px;
     align-self: flex-start;
+    flex-basis: 265px;
+    width: 280px;
 }
 .log-printer {
     width: 300px;
@@ -159,9 +161,10 @@ td {
 }
 
 .log-printer-record {
-    font-family: texgyre;
+    font-family: b52;
     font-size: 18px;
     line-height: 20px;
+    text-transform: uppercase;
 }
 
 /* gauge - completed set of indicators */
@@ -177,16 +180,21 @@ td {
     border: outset 1px grey;
     background-image: url(../img/panel-bg.png);
     color: white;
-    font-family: monospace;
-    font-weight: 800;
+    font-family: jost;
     font-size: 16px; 
 }
 .gaugelabel {
     padding: 2px 10px;
     color: #DDDDDD;
     font-size: 18px;
-    font-weight: bold;
-    font-family: monospace;
+    font-family: jost;
+}
+.gaugeswitch {
+    border: inset white 4px;
+    outline: white 10px;
+    background-image: url(../img/switch.png);
+    width: 76px;
+    height: 32px;
 }
 
 /* Gauges groups */
@@ -204,9 +212,11 @@ td {
     color: #DDDDDD;
     background-color: #3D3D3D;
     border: #CCCCCC 3px solid;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold;
-    font-family: monospace;
+    font-family: jost;
+    letter-spacing: 3px;
+    text-align: center;
 }
 
 /*NORMAL Digits Indicator style */
@@ -260,22 +270,22 @@ td {
 .ships-key {
     height: 32px;
     width: 128px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
 }
 
 .ships-key:active {
-    font-size: 19.5px;
+    font-size: 15.5px;
 }
 
 .place-key {
     height: 48px;
     width: 128px;
-    font-size: 32px;
+    font-size: 20px;
 }
 
 .place-key:active {
-    font-size: 31.5px;
+    font-size: 19.5px;
 }
 
 .place-keys-container {
@@ -325,18 +335,17 @@ td {
 .battlegrid-xcoord {
     color: green;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 600;
     text-align: center;
     vertical-align: middle;
 }
 .battlegrid-ycoord {
     color: green;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 600;
     text-align: center;
     vertical-align: middle;
 }
 
-/* Main Content */
 
 
