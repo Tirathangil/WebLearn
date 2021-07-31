@@ -101,7 +101,34 @@ td {
     padding: 8px;
 }
 
+.holders {
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    z-index: -1;
+}
+.holder-bar {
+    width: 100%;
+    height: 64px;
+    background-image: url(../img/panel-holder.png);
+    background-repeat: repeat-x;
+    background-size: contain;
+    margin-bottom: 128px;
+    border-top: solid black 1px;
+    border-bottom: solid black 1px;
+    box-shadow: 0px 6px 10px 0 black;
+}
+
 /*Main panels Classes */
+.panel {
+    width: 1080px;
+    padding: 24px;
+    border: outset 5px white;
+    border-radius: 12px;
+    background-image: url(../img/panel-bg.png);
+    align-content: center;
+    z-index: 2; 
+}
 .fcs {
     width: 1080px;
     padding: 24px;
@@ -262,36 +289,29 @@ td {
     outline: none;
     margin: 5px;
 }
-
 .button-key:active {
     border-style: groove;
 }
-
 .ships-key {
     height: 32px;
     width: 128px;
     font-size: 16px;
     font-weight: 400;
 }
-
 .ships-key:active {
     font-size: 15.5px;
 }
-
 .place-key {
     height: 48px;
     width: 128px;
     font-size: 20px;
 }
-
 .place-key:active {
     font-size: 19.5px;
 }
-
 .place-keys-container {
     margin-left: 16px;
 }
-
 .rivets {
     margin: 8px;
 }
@@ -301,7 +321,7 @@ td {
     margin-bottom: auto;
     width: 100%;
     padding: 20px;
-    color: green;
+    color: limegreen;
 }
 .start-menu-item {
     margin-bottom: 10px;
@@ -310,37 +330,33 @@ td {
 }
 .start-menu-item:hover {
     color: black;
-    background-color: green;
+    background-color: limegreen;
     font-size: 42px;
 }
 
 /* Game grid classes */
 .battlegrid {
-    border: solid 3px green;
+    color: limegreen;
+    border: solid 3px limegreen;
     border-spacing: 0px;
 }
 .battlegrid-cell {
-    color: green;
-    
-    border: dashed 1px green;
+    border: dashed 1px; /*lightgreen*/
     margin: 0px;
     transition-duration: 0.5s;
 }
 .battlegrid-cell:hover {
     border: solid 1px;
-    border-color: green;
-    background-color: green;
+    background-color: limegreen;
     color: black;
 }
 .battlegrid-xcoord {
-    color: green;
     font-size: 20px;
     font-weight: 600;
     text-align: center;
     vertical-align: middle;
 }
 .battlegrid-ycoord {
-    color: green;
     font-size: 20px;
     font-weight: 600;
     text-align: center;

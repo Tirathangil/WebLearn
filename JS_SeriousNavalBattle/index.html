@@ -16,8 +16,19 @@
         </div>
 
     </header>
-
     <div class="main-content">
+        <div class="holders">
+            <div class="holder-bar">
+            </div>
+            <div class="holder-bar">
+            </div>
+        </div>
+        <div class="panel display-none" id="leftpanel">
+        </div>
+        <div class="monitor display-none">
+        </div>
+        <div class="panel display-none" id="rightpanel">
+        </div> 
         <div class="fcs place-row">
             <div class="log-printer place-column-reverse" id="logprinter">
                 <div class="log-printer-record type-font">
@@ -466,7 +477,7 @@
                             <div class="gaugelabel">Сетка (свой/чужой): </div>
                             <div class="gaugeswitch"></div>
                         </div>
-                        <button class="button-key jost-font" onclick="ControlPanel.LoadGame()" id="SelectShip">Скрыть сетку</button>
+                        <button class="button-key jost-font" onclick="TimerToggle()" id="SelectShip">Скрыть сетку</button>
                     </div>
                 </div>
             </div>
