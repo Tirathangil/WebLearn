@@ -1,0 +1,51 @@
+body {
+    background: linear-gradient(180deg, #F9F9F9 0%, #F9F9F9 90.61%, #FFFFFF 100%);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background: #FFF;
+    height: 104px;
+    max-width: 100%;
+}
+
+.header-info {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    border: solid 2px green;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+
+.main-padding {
+    padding-left: 380px;
+    padding-right: 380px;
+}
+
+.logo {
+    background-image: url(../img/logo.png);
+    height: 90px;
+    width: 90px;
+    margin-right: 32px;
+}
+
+.headblock-1 {
+    border: orange 2px solid;
+    min-width: 250px;
+}
+
+.headblock-2 {
+    border: blue 2px solid;
+    min-width: 250px;
+    
+}
+
+.headblock-3 {
+    border: green 2px solid;
+    min-width: 250px;
+    
+}

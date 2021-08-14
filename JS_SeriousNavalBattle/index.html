@@ -4,486 +4,417 @@
 <head>
     <title>Морской бой</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="css/control.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <script src="js/controls.js" type="application/javascript" async></script>
+    <link rel="stylesheet" type="text/css" href="" id="Theme">
+    <script src="js/pagecontrol.js"></script>
 </head>
 
-<body onload="Init()">
-    <header class="page-header">
-        <div class="gost-font">
-            Морской бой
-        </div>
-
-    </header>
-    <div class="main-content">
-        <div class="holders">
-            <div class="holder-bar">
-            </div>
-            <div class="holder-bar">
-            </div>
-        </div>
-        <div class="panel display-none" id="leftpanel">
-        </div>
-        <div class="monitor display-none">
-        </div>
-        <div class="panel display-none" id="rightpanel">
-        </div> 
-        <div class="fcs place-row">
-            <div class="log-printer place-column-reverse" id="logprinter">
-                <div class="log-printer-record type-font">
-                    Test English font GNU Typewriter
-                </div>
-                <div class="log-printer-record type-font">
-                    Тест русского шрифта GNU Typewriter
-                </div>
-            </div>
-            <div class="monitor align-vcenter align-hcenter">
-                <div class="start-menu dited-font" id="startmenu">
-                    <div class="start-menu-item align-hcenter" id="newgame" onclick="ControlPanel.StartGame()">Начать игру</div>
-                    <div class="start-menu-item align-hcenter" id="about">Об игре</div>
-                </div>
-                <table class="battlegrid display-none" id="enemygrid">
-                    <tr>
-                        <td>
-
-                        </td>
-                        <td class="battlegrid-ycoord dited-font">
-                            1
-                        </td>
-                        <td class="battlegrid-ycoord dited-font">
-                            2
-                        </td>
-                        <td class="battlegrid-ycoord dited-font">
-                            3
-                        </td>
-                        <td class="battlegrid-ycoord dited-font">
-                            4
-                        </td>
-                        <td class="battlegrid-ycoord dited-font">
-                            5
-                        </td>
-                        <td class="battlegrid-ycoord dited-font">
-                            6
-                        </td>
-                        <td class="battlegrid-ycoord dited-font">
-                            7
-                        </td>
-                        <td class="battlegrid-ycoord dited-font">
-                            8
-                        </td>
-                        <td class="battlegrid-ycoord dited-font">
-                            9
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="battlegrid-xcoord dited-font">
-                            A
-                        </td>
-                        <td class="battlegrid-cell" id="A1">
-                        </td>
-                        <td class="battlegrid-cell" id="A2">
-                        </td>
-                        <td class="battlegrid-cell" id="A3">
-                        </td>
-                        <td class="battlegrid-cell" id="A4">
-                        </td>
-                        <td class="battlegrid-cell" id="A5">
-                        </td>
-                        <td class="battlegrid-cell" id="A6">
-                        </td>
-                        <td class="battlegrid-cell" id="A7">
-                        </td>
-                        <td class="battlegrid-cell" id="A8">
-                        </td>
-                        <td class="battlegrid-cell" id="A9">
-                        </td>
-                        <td class="battlegrid-xcoord">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="battlegrid-xcoord dited-font">
-                            B
-                        </td>
-                        <td class="battlegrid-cell" id="B1">
-                        </td>
-                        <td class="battlegrid-cell" id="B2">
-                        </td>
-                        <td class="battlegrid-cell" id="B3">
-                        </td>
-                        <td class="battlegrid-cell" id="B4">
-                        </td>
-                        <td class="battlegrid-cell" id="B5">
-                        </td>
-                        <td class="battlegrid-cell" id="B6">
-                        </td>
-                        <td class="battlegrid-cell" id="B7">
-                        </td>
-                        <td class="battlegrid-cell" id="B8">
-                        </td>
-                        <td class="battlegrid-cell" id="B9">
-                        </td>
-                        <td class="battlegrid-xcoord">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="battlegrid-xcoord dited-font">
-                            C
-                        </td>
-                        <td class="battlegrid-cell" id="C1">
-                        </td>
-                        <td class="battlegrid-cell" id="C2">
-                        </td>
-                        <td class="battlegrid-cell" id="C3">
-                        </td>
-                        <td class="battlegrid-cell" id="C4">
-                        </td>
-                        <td class="battlegrid-cell" id="C5">
-                        </td>
-                        <td class="battlegrid-cell" id="C6">
-                        </td>
-                        <td class="battlegrid-cell" id="C7">
-                        </td>
-                        <td class="battlegrid-cell" id="C8">
-                        </td>
-                        <td class="battlegrid-cell" id="C9">
-                        </td>
-                        <td class="battlegrid-xcoord">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="battlegrid-xcoord dited-font">
-                            D
-                        </td>
-                        <td class="battlegrid-cell" id="D1">
-                        </td>
-                        <td class="battlegrid-cell" id="D2">
-                        </td>
-                        <td class="battlegrid-cell" id="D3">
-                        </td>
-                        <td class="battlegrid-cell" id="D4">
-                        </td>
-                        <td class="battlegrid-cell" id="D5">
-                        </td>
-                        <td class="battlegrid-cell" id="D6">
-                        </td>
-                        <td class="battlegrid-cell" id="D7">
-                        </td>
-                        <td class="battlegrid-cell" id="D8">
-                        </td>
-                        <td class="battlegrid-cell" id="D9">
-                        </td>
-                        <td class="battlegrid-xcoord">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="battlegrid-xcoord dited-font">
-                            E
-                        </td>
-                        <td class="battlegrid-cell" id="E1">
-                        </td>
-                        <td class="battlegrid-cell" id="E2">
-                        </td>
-                        <td class="battlegrid-cell" id="E3">
-                        </td>
-                        <td class="battlegrid-cell" id="E4">
-                        </td>
-                        <td class="battlegrid-cell" id="E5">
-                        </td>
-                        <td class="battlegrid-cell" id="E6">
-                        </td>
-                        <td class="battlegrid-cell" id="E7">
-                        </td>
-                        <td class="battlegrid-cell" id="E8">
-                        </td>
-                        <td class="battlegrid-cell" id="E9">
-                        </td>
-                        <td class="battlegrid-xcoord">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="battlegrid-xcoord dited-font">
-                            F
-                        </td>
-                        <td class="battlegrid-cell" id="F1">
-                        </td>
-                        <td class="battlegrid-cell" id="F2">
-                        </td>
-                        <td class="battlegrid-cell" id="F3">
-                        </td>
-                        <td class="battlegrid-cell" id="F4">
-                        </td>
-                        <td class="battlegrid-cell" id="F5">
-                        </td>
-                        <td class="battlegrid-cell" id="F6">
-                        </td>
-                        <td class="battlegrid-cell" id="F7">
-                        </td>
-                        <td class="battlegrid-cell" id="F8">
-                        </td>
-                        <td class="battlegrid-cell" id="F9">
-                        </td>
-                        <td class="battlegrid-xcoord">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="battlegrid-xcoord dited-font">
-                            G
-                        </td>
-                        <td class="battlegrid-cell" id="G1">
-                        </td>
-                        <td class="battlegrid-cell" id="G2">
-                        </td>
-                        <td class="battlegrid-cell" id="G3">
-                        </td>
-                        <td class="battlegrid-cell" id="G4">
-                        </td>
-                        <td class="battlegrid-cell" id="G5">
-                        </td>
-                        <td class="battlegrid-cell" id="G6">
-                        </td>
-                        <td class="battlegrid-cell" id="G7">
-                        </td>
-                        <td class="battlegrid-cell" id="G8">
-                        </td>
-                        <td class="battlegrid-cell" id="G9">
-                        </td>
-                        <td class="battlegrid-xcoord">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="battlegrid-xcoord dited-font">
-                            H
-                        </td>
-                        <td class="battlegrid-cell" id="H1">
-                        </td>
-                        <td class="battlegrid-cell" id="H2">
-                        </td>
-                        <td class="battlegrid-cell" id="H3">
-                        </td>
-                        <td class="battlegrid-cell" id="H4">
-                        </td>
-                        <td class="battlegrid-cell" id="H5">
-                        </td>
-                        <td class="battlegrid-cell" id="H6">
-                        </td>
-                        <td class="battlegrid-cell" id="H7">
-                        </td>
-                        <td class="battlegrid-cell" id="H8">
-                        </td>
-                        <td class="battlegrid-cell" id="H9">
-                        </td>
-                        <td class="battlegrid-xcoord">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="battlegrid-xcoord dited-font">
-                            I
-                        </td>
-                        <td class="battlegrid-cell" id="I1">
-                        </td>
-                        <td class="battlegrid-cell" id="I2">
-                        </td>
-                        <td class="battlegrid-cell" id="I3">
-                        </td>
-                        <td class="battlegrid-cell" id="I4">
-                        </td>
-                        <td class="battlegrid-cell" id="I5">
-                        </td>
-                        <td class="battlegrid-cell" id="I6">
-                        </td>
-                        <td class="battlegrid-cell" id="I7">
-                        </td>
-                        <td class="battlegrid-cell" id="I8">
-                        </td>
-                        <td class="battlegrid-cell" id="I9">
-                        </td>
-                        <td class="battlegrid-xcoord">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="battlegrid-ycoord">
-
-                        </td>
-                        <td class="battlegrid-ycoord">
-
-                        </td>
-                        <td class="battlegrid-ycoord">
-
-                        </td>
-                        <td class="battlegrid-ycoord">
-
-                        </td>
-                        <td class="battlegrid-ycoord">
-
-                        </td>
-                        <td class="battlegrid-ycoord">
-
-                        </td>
-                        <td class="battlegrid-ycoord">
-
-                        </td>
-                        <td class="battlegrid-ycoord">
-
-                        </td>
-                        <td class="battlegrid-ycoord">
-
-                        </td>
-                        <td class="battlegrid-ycoord">
-
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div class="control-panel place-column align-vcenter">
-                <div class="control-panel-group place-column display-none" id="placegroup">
-                    <div class="control-panel-group-label">
-                        РАЗМЕЩЕНИЕ КОРАБЛЕЙ
-                    </div>
-                    <div class="place-column align-vcenter align-right">
-                        <div class="gauge place-row align-vcenter align-right">
-                            <button class="button-key ships-key jost-font">
-                                Эсминцы
-                            </button>
-                            <div class="seg-indicator">
-                                <div class="seg-indicator-grid">
-                                    <span class="dseg7">8</span>
-                                </div>
-                                <div class="seg-indicator-value">
-                                    <span class="dseg7" id="destroyers">-</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gauge place-row align-vcenter align-right">
-                            <button class="button-key ships-key jost-font">
-                                Фрегаты
-                            </button>
-                            <div class="seg-indicator">
-                                <div class="seg-indicator-grid">
-                                    <span class="dseg7">8</span>
-                                </div>
-                                <div class="seg-indicator-value">
-                                    <span class="dseg7" id="fregats">-</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gauge place-row align-vcenter align-right">
-                            <button class="button-key ships-key jost-font">
-                                Крейсеры
-                            </button>
-                            <div class="seg-indicator">
-                                <div class="seg-indicator-grid">
-                                    <span class="dseg7">8</span>
-                                </div>
-                                <div class="seg-indicator-value">
-                                    <span class="dseg7" id="cruisers">-</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gauge place-row align-vcenter align-right">
-                            <button class="button-key ships-key jost-font">
-                                Линкоры
-                            </button>
-                            <div class="seg-indicator">
-                                <div class="seg-indicator-grid">
-                                    <span class="dseg7">8</span>
-                                </div>
-                                <div class="seg-indicator-value">
-                                    <span class="dseg7" id="destroyers">-</span>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="button-key place-key jost-font">Повернуть</button>
-                        <button class="button-key place-key jost-font">Сброс</button>
-                        <button class="button-key place-key jost-font" onclick="ControlPanel.ShipsPlaced()">Готово</button>
-                    </div>
-                </div>
-                <div id="battlecontrol">
-                    <div class="control-panel-group place-column align-right">
-                        <div class="control-panel-group-label">
-                            ХОД БОЯ
-                        </div>
-                        <div class="gauge place-row align-right align-vcenter">
-                            <div class="gaugelabel">
-                                Время боя:
-                            </div>
-                            <div class="seg-indicator">
-                                <div class="seg-indicator-grid">
-                                    <span class="dseg7">88:88</span>
-                                </div>
-                                <div class="seg-indicator-value">
-                                    <span class="dseg7" id="timer">--:--</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gauge place-row align-right align-vcenter">
-                            <div class="gaugelabel">
-                                Выстрелов:
-                            </div>
-                            <div class="seg-indicator">
-                                <div class="seg-indicator-grid">
-                                    <span class="dseg7">88</span>
-                                </div>
-                                <div class="seg-indicator-value">
-                                    <span class="dseg7">--</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gauge place-row align-right align-vcenter">
-                            <div class="gaugelabel">
-                                Попаданий:
-                            </div>
-                            <div class="seg-indicator">
-                                <div class="seg-indicator-grid">
-                                    <span class="dseg7">88</span>
-                                </div>
-                                <div class="seg-indicator-value">
-                                    <span class="dseg7">--</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gauge place-row align-right align-vcenter">
-                            <div class="gaugelabel">
-                                Точность(&#37;):
-                            </div>
-                            <div class="seg-indicator">
-                                <div class="seg-indicator-grid">
-                                    <span class="dseg7">888</span>
-                                </div>
-                                <div class="seg-indicator-value">
-                                    <span class="dseg7" id="accuracy">---</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="control-panel-group place-column">
-                        <div class="control-panel-group-label">
-                            УПРАВЛЕНИЕ ОГНЁМ
-                        </div>
-                        <div class="gauge place-row align-right align-vcenter">
-                            <div class="gaugelabel">
-                                Квадрат:
-                            </div>
-                            <div class="seg-indicator">
-                                <div class="seg-indicator-grid">
-                                    <span class="dseg14">~</span><span class="dseg7">8</span>
-                                </div>
-                                <div class="seg-indicator-value">
-                                    <span class="dseg14" id="ycoord">-</span><span class="dseg7" id="xcoord">-</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gauge place-row align-right align-vcenter">
-                            <div class="gaugelabel">Сетка (свой/чужой): </div>
-                            <div class="gaugeswitch"></div>
-                        </div>
-                        <button class="button-key jost-font" onclick="TimerToggle()" id="SelectShip">Скрыть сетку</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+<body>
+    <div id="PageHeader">
+        Морской бой
     </div>
-    <footer class="page-footer"></footer>
+
+    <div id="content">
+        <table id="battlegrid">
+            <tr>
+                <td>
+                </td>
+
+                <td>
+                    1
+                </td>
+
+                <td>
+                    2
+                </td>
+
+                <td>
+                    3
+                </td>
+
+                <td>
+                    4
+                </td>
+
+                <td>
+                    5
+                </td>
+                <td>
+                    6
+                </td>
+                <td>
+                    7
+                </td>
+                <td>
+                    8
+                </td>
+                <td>
+                    9
+                </td>
+                <td>
+                    0
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    A
+                </td>
+
+                <td id="A1">
+                </td>
+
+                <td id="A2">
+                </td>
+
+                <td id="A3">
+                </td>
+
+                <td id="A4">
+                </td>
+
+                <td id="A5"> 
+                </td>
+                
+                <td id="A6">
+                </td>
+                
+                <td id="A7">
+                </td>
+                
+                <td id="A8">
+                </td>
+                
+                <td id="A9">
+                </td>
+                
+                <td id="A0">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    B
+                </td>
+
+                <td id="B1">
+                </td>
+
+                <td id="B2">
+                </td>
+
+                <td id="B3">
+                </td>
+
+                <td id="B4">
+                </td>
+
+                <td id="B5">
+                </td>
+                
+                <td id="B6">
+                </td>
+                
+                <td id="B7">
+                </td>
+                
+                <td id="B8">
+                </td>
+                
+                <td id="B9">
+                </td>
+                
+                <td id="B0">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    C
+                </td>
+
+                <td id="C1">
+                </td>
+
+                <td id="C2">
+                </td>
+
+                <td id="C3">
+                </td>
+
+                <td id="C4">
+                </td>
+
+                <td id="C5">
+                </td>
+                
+                <td id="C6">
+                </td>
+                
+                <td id="C7">
+                </td>
+                
+                <td id="C8">
+                </td>
+                
+                <td id="C9">
+                </td>
+                
+                <td id="C0">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    D
+                </td>
+
+                <td id="D1">
+                </td>
+
+                <td id="D2">
+                </td>
+
+                <td id="D3">
+                </td>
+
+                <td id="D4">
+                </td>
+
+                <td id="D5">
+                </td>
+                
+                <td id="D6">
+                </td>
+                
+                <td id="D7">
+                </td>
+                
+                <td id="D8">
+                </td>
+                
+                <td id="D9">
+                </td>
+                
+                <td id="D0">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    E
+                </td>
+
+                <td id="E1">
+                </td>
+
+                <td id="E2">
+                </td>
+
+                <td id="E3">
+                </td>
+
+                <td id="E4">
+                </td>
+
+                <td id="E5">
+                </td>
+                
+                <td id="E6">
+                </td>
+                
+                <td id="E7">
+                </td>
+                
+                <td id="E8">
+                </td>
+                
+                <td id="E9">
+                </td>
+                
+                <td id="E0">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    F
+                </td>
+
+                <td id="F1">
+                </td>
+
+                <td id="F2">
+                </td>
+
+                <td id="F3">
+                </td>
+
+                <td id="F4">
+                </td>
+
+                <td id="F5">
+                </td>
+                
+                <td id="F6">
+                </td>
+                
+                <td id="F7">
+                </td>
+                
+                <td id="F8">
+                </td>
+                
+                <td id="F9">
+                </td>
+                
+                <td id="F0">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    G
+                </td>
+
+                <td id="G1">
+                </td>
+
+                <td id="G2">
+                </td>
+
+                <td id="G3">
+                </td>
+
+                <td id="G4">
+                </td>
+
+                <td id="G5">
+                </td>
+                
+                <td id="G6">
+                </td>
+                
+                <td id="G7">
+                </td>
+                
+                <td id="G8">
+                </td>
+                
+                <td id="G9">
+                </td>
+                
+                <td id="G0">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    H
+                </td>
+
+                <td id="H1">
+                </td>
+
+                <td id="H2">
+                </td>
+
+                <td id="H3">
+                </td>
+
+                <td id="H4">
+                </td>
+
+                <td id="H5">
+                </td>
+                
+                <td id="H6">
+                </td>
+                
+                <td id="H7">
+                </td>
+                
+                <td id="H8">
+                </td>
+                
+                <td id="H9">
+                </td>
+                
+                <td id="H0">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    I
+                </td>
+
+                <td id="I0">
+                </td>
+
+                <td id="I0">
+                </td>
+
+                <td id="I0">
+                </td>
+
+                <td id="I0">
+                </td>
+
+                <td id="I0">
+                </td>
+                
+                <td id="I0">
+                </td>
+                
+                <td id="I0">
+                </td>
+                
+                <td id="I0">
+                </td>
+                
+                <td id="I0">
+                </td>
+                
+                <td id="I0">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    J
+                </td>
+
+                <td id="J1">
+                </td>
+
+                <td id="J2">
+                </td>
+
+                <td id="J3">
+                </td>
+
+                <td id="J4">
+                </td>
+
+                <td id="J5">
+                </td>
+                
+                <td id="J6">
+                </td>
+                
+                <td id="J7">
+                </td>
+                
+                <td id="J8">
+                </td>
+                
+                <td id="J9">
+                </td>
+                
+                <td id="J0">
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="PageFooter">
+        Выбор темы
+        <select id="ThemeSelector" onchange="ChangeTheme(event)">
+            <option>BlueSea</option>
+            <option>Тестовая</option>
+        </select>
+    </div>
 </body>
 
 </html>

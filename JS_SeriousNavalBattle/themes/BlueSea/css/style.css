@@ -1,0 +1,33 @@
+#PageHeader {
+    background-color: skyblue;
+    color: black;
+    font-family: monospace;
+    font-size: 32px;
+    font-weight: 800;
+    height: 128px;
+    padding: 16px;
+    border-bottom: black solid 2px;
+}
+
+#content {
+    min-height: calc(100vh - 196px);
+}
+
+#PageFooter {
+    height: 32px;
+    background-color: skyblue;
+    border-top: black solid 2px;
+    padding-left: 12px;
+}
+
+
+#battlegrid {
+    border: solid 1px black;
+}
+
+#battlegrid td {
+    border: dashed 1px black;
+    height: 32px;
+    width: 32px;
+}
+
