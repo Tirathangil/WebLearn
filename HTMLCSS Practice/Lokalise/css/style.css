@@ -1,0 +1,152 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts/roboto-thin.woff") format("woff")
+         url("fonts/roboto-regular.woff") format("woff")
+         url("fonts/roboto-medium.woff.woff") format("woff");
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    height: 95px;
+    padding: 0px 25px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Roboto;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+nav div {
+    margin-right: 57px;
+}
+
+.logo {
+    width: 130px;
+    height: 28px;
+    margin-right: 51px;
+}
+
+.spacer {
+    flex-grow: 1;
+}
+
+.white-button {
+    background-color: #FFF;
+    border: solid 1px black;
+}
+
+.yellow-button {
+    background-color: #FF6336;
+    color: #FFF;
+    border: none;
+}
+
+.header-button-container {}
+
+.header-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 120px;
+    height: 45px;
+    border-radius: 0px;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 600;
+}
+.article1 {
+    display: flex;
+    flex-direction: row;
+    margin: 130px 75px;
+}
+.article1-info {
+    font-family: "Roboto";
+    color: black;
+}
+
+.article1-info-header {
+    font-size: 65px;
+    line-height: 70px;
+    font-weight: 600;
+}
+
+.article1-info-text {
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 400px;
+    padding: 51px 0px;
+}
+
+.article1-info-adv {
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400px;
+    padding: 25px 0px;
+}
+
+.article1-info-button {
+    width: 160px;
+    height: 60px;
+    font-size: 16px;
+    font-weight: 600px;
+}
+
+.article2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FF9C7D;
+    padding: 108px 95px;
+}
+
+.article2-text {
+    color: black;
+    font-family: Roboto;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+    max-width: 700px;
+    text-align: center;
+}
+
+.article2-companies {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    margin-top: 86px;
+    width: 100%;
+}
+
+.article3 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 90px 75px 150px 75px;
+}
+
+.article3-block {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.article3-block:nth-child(odd) {
+    display: flex;
+    flex-direction: row;
+}
+
+.article3:nth-child(even){
+    display: flex;
+    flex-direction: row;
+}
